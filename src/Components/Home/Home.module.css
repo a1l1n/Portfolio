@@ -1,0 +1,171 @@
+.home_section {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 3.8em;
+}
+
+.home_container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    row-gap: 7em;
+}
+
+.home_content {
+    display: grid;
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home_data {
+    margin-top: 1.5rem;
+}
+
+/* IMAGE ------------------------------------ */
+
+/* .home_box_img {
+    order: 1;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+ */
+.home_img {
+    background: url("../../assets/Profile2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 150%;
+}
+
+/* BUTTON ----------------------------------- */
+
+.home_button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 2.6em;
+    width: 9em;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.home_button_a {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.home_button_icon {
+    margin-left: 0.8em;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.home_button:hover {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/* SOCIAL ---------------------------- */
+.home_social {
+/*     display: flex;
+    flex-direction: column;
+    background-color: yellow; 
+    CHEQUEAR SI HAY DIFERENCIAS CON EL TEMA RESPONSIVE*/
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social_icon {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.home_social_icon:hover {
+    color: rgb(175, 150, 6);
+}
+
+/* TITLE ------------------------ */
+.home_title {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+/* SUBTITLE --------------------------------------------------- */
+
+.home_subtitle {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-left: 5.5rem;
+}
+
+.home_subtitle::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    left: 19rem;
+    top: 17.3rem;
+}
+
+/* PRESENTATION ----------------------------------------------- */
+
+.home_presentation {
+    font-weight: 350;
+    margin-bottom: 1.2rem;
+}
+
+/* SCROLL ----------------------------------------- */
+.home_scroll {
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+}
+
+.home_scroll_button {
+    margin-left: 9rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform:  translateY(0);
+    }
+    30% {
+        transform: translateY(2rem);
+    }
+}
+
+.home_scroll_icon {
+    color: rgb(175, 150, 6);;
+    animation: scroll 4s ease infinite;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.home_scroll_span {
+    position: relative;
+    margin-left: 2em;
+    top: .5rem;
+    color: rgba(0, 0, 0, 0.671)
+}
+
+
+
+
+

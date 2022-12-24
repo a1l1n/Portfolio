@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     z-index: fixed;
-    background-color: white; 
+    background-color: white;
 }
 
 .nav {
@@ -61,10 +61,6 @@
         bottom: 0;
     }
 
-/*     .nav {
-        background-color: green; 
-        width: 100%;
-    } */
     .nav_menu {
         position: fixed;
         bottom: -100%;
@@ -117,7 +113,6 @@
         display: block;
     }
 }
-
 
 /* SMALL DEVICES ------------------------------------------- */
 @media screen and (max-width: 350px) {
