@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineHome, AiOutlineUser, AiOutlineFileDone, AiOutlinePicture, AiOutlineSend, AiOutlineClose, AiOutlineAppstore } from "react-icons/ai";
-import { BsBriefcase } from "react-icons/bs";
+import { BsBriefcase, BsCircleFill } from "react-icons/bs";
 import Styles from "./NavBar.module.css";
 
 export const NavBar = () => {
@@ -9,7 +9,7 @@ export const NavBar = () => {
   return (
     <header className={Styles.header}>
         <nav className={Styles.nav}>
-            <div className={Styles.nav_logo}>Portfolio</div> 
+            <div className={Styles.nav_logo}><BsCircleFill className={Styles.nav_logo_icon} />Portfolio</div> 
             <div className={Toggle ? Styles.show_menu : Styles.nav_menu}>
                 <ul className={Styles.nav_menu_grid}>
 
@@ -33,7 +33,7 @@ export const NavBar = () => {
 
                     <li className={Styles.nav_menu_item}>
                         <BsBriefcase className={Styles.nav_menu_icon}/>
-                        <a href='#services' className={Styles.nav_menu_link}> Services 
+                        <a href='#services' className={Styles.nav_menu_link}> Servicios 
                         </a>
                     </li>
 
@@ -45,7 +45,7 @@ export const NavBar = () => {
 
                     <li className={Styles.nav_menu_item}>
                         <AiOutlineSend className={Styles.nav_menu_icon}/>
-                        <a href='#contact' className={Styles.nav_menu_link}> Contact
+                        <a href='#contact' className={Styles.nav_menu_link}> Contacto
                         </a>
                     </li>
                 </ul>

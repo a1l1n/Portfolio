@@ -6,8 +6,10 @@ export const Data = () => {
   return (
     <div className={Styles.home_data}>
         <h1 className={Styles.home_title}>Ailin Tobares</h1>
-        <h3 className={Styles.home_subtitle}>Full Stack Developer</h3>
-        <p className={Styles.home_presentation}>Hola, te saluda una entusiasta Desarrolladora Web argentina orientada especialmente al Front-End. Dedicada al 100% en cualquier proyecto que encaro, me divierte y entusiasma programar e investigar. Si mi perfil te interesa... </p>
+        <div className={Styles.home_subtitle}>
+            <h3>Full Stack Developer</h3>
+        </div>
+        <p className={Styles.home_presentation}>Hola, te saluda una entusiasta Desarrolladora Web orientada al Front-End. Si mi perfil te interesa... </p>
         
         <div  className={Styles.home_button}>
             <a href="#contact" className={Styles.home_button_a}>
