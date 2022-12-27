@@ -2,6 +2,11 @@ import './App.css';
 import { About } from './Components/About/About';
 import { Home } from './Components/Home/Home';
 import { NavBar } from './Components/NavBar/NavBar';
+import { Skills } from './Components/Skills/Skills';
+import { Services } from "./Components/Services/Services"
+import { Portfolio } from './Components/Portfolio/Portfolio';
+import { Contact } from './Components/Contact/Contact';
+
 
 function App() {
   return (
@@ -10,6 +15,10 @@ function App() {
       <main className="main" >
         <Home />
         <About />
+        <Skills />
+        <Services />
+        <Portfolio />
+        <Contact />
       </main>
     </div>
   );

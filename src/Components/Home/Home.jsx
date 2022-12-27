@@ -10,7 +10,6 @@ export const Home = () => {
        <div className={Style.home_container}>
          <div className={Style.home_content}>
           <Social />
-          
 {/*           <div className={Style.home_box_img}>
           </div> */}
           <div className={Style.home_img}></div>

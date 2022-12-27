@@ -1,7 +1,7 @@
 .header {
     width: 100vw; 
     position: fixed;
-    z-index: fixed;
+    z-index: 10;
     background-color: white;
     box-shadow: 0px 15px 10px -22px #111
 }
@@ -61,6 +61,12 @@
 
 /* MEDIA - QUERY ------------------------------------ */
 /* MEDIUM DEVICES ----------------------------------- */
+@media screen and (max-width: 840px) {
+    .nav_logo_icon {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 801px){
     .header {
         top: initial;
