@@ -101,7 +101,12 @@
 
 
 /* RESPONSIVE ------------------- */
-@media screen and (max-width: 1400px) {    
+@media screen and (max-width: 1400px) {
+    .portfolio_section {
+        height: 1100px;
+        padding-top: 6rem;
+    } 
+
     .portfolio_content {
         grid-template-columns: repeat(2, 350px);
         column-gap: 3rem;
@@ -117,10 +122,16 @@
     }
 }
 
+@media screen and (max-width: 801px) {
+    .portfolio_section {
+        padding-top: 1rem;
+    } 
+}
+
 @media screen and (max-width: 740px) {
-/*     .portfolio_section {
-        top: 20rem;
-    } */
+    .portfolio_section {
+        height: 1780px;
+    } 
 
     .portfolio_content {
         grid-template-columns: repeat(1, 350px);
