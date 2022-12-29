@@ -31,11 +31,11 @@ export const NavBar = () => {
                         </a>
                     </li>
 
-                    <li className={Styles.nav_menu_item}>
+{/*                     <li className={Styles.nav_menu_item}>
                         <BsBriefcase className={Styles.nav_menu_icon}/>
                         <a href='#services' className={Styles.nav_menu_link}> Servicios 
                         </a>
-                    </li>
+                    </li> */}
 
                     <li className={Styles.nav_menu_item}>
                         <AiOutlinePicture className={Styles.nav_menu_icon}/>

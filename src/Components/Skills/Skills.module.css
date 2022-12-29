@@ -70,6 +70,7 @@
 /* RESPONSIVE --------------------------------------------- */
 @media screen and (max-width: 801px) {
     .skills_section {
+        height: 840px;
         padding-top: 0rem;
     }
     

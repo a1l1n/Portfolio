@@ -15,7 +15,6 @@ export const Cards = () => {
 
   const clickImage = (index) => {
     console.log("Entramos a clickImage");
-    console.log("Esto es modal:", modal)
     setModal(index);
   }
 
