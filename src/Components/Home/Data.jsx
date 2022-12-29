@@ -9,7 +9,7 @@ export const Data = () => {
         <div className={Styles.home_subtitle}>
             <h3>Full Stack Developer</h3>
         </div>
-        <p className={Styles.home_presentation}>Hola, te saluda una entusiasta Desarrolladora Web orientada al Front-End. Si mi perfil te interesa... </p>
+        <p className={Styles.home_presentation}>Hola, te saluda una entusiasta del Desarrollo Web. Pasá y mirá mis proyectos y si mi perfil te interesa... </p>
         
         <div  className={Styles.home_button}>
             <a href="#contact" className={Styles.home_button_a}>

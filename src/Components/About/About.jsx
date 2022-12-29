@@ -4,6 +4,7 @@ import { Info } from './Info';
 import { FaRegFilePdf } from "react-icons/fa";
 import CV from "../../assets/CV-Tobares Ailin.pdf"
 import Styles from "./About.module.css";
+/* Soy Ailin, desarrolladora web fullstack con inclinacion al Frontend, maneji tecnologias PERN y me gusta incluir el estudio del diseño UI en mis proyectos. */
 
 export const About = () => {
   return (
@@ -16,7 +17,7 @@ export const About = () => {
             <img src={Image} alt="" className={Styles.about_image}/>
             <div className={Styles.about_data}>
                 <Info />
-                <p className={Styles.about_description}>Soy de Buenos Aires, Argentina. Dedicada al 100% en cualquier proyecto que encaro, me divierte y entusiasma programar. </p>
+                <p className={Styles.about_description}>Soy de Buenos Aires, Argentina. Desarrolladora Full Stack con inclinación al Front End, manejo tecnologías PERN. Me gusta incluir el diseño UI en mis proyectos. </p>
                 <div className={Styles.about_button}>
                     <a download="" href={CV} className={Styles.about_button_a}>Download CV <FaRegFilePdf className={Styles.about_button_icon}/></a>
                 </div>

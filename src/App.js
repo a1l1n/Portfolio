@@ -6,6 +6,7 @@ import { Skills } from './Components/Skills/Skills';
 import { Services } from "./Components/Services/Services"
 import { Portfolio } from './Components/Portfolio/Portfolio';
 import { Contact } from './Components/Contact/Contact';
+import { Footer } from "./Components/Footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Services />
         <Portfolio />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

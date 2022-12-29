@@ -2,13 +2,11 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { BiMailSend } from "react-icons/bi";
 import { AiOutlineArrowRight, AiOutlineLinkedin, AiOutlineSend } from "react-icons/ai";
+import Swal from 'sweetalert2';
 import Styles from "./Contact.module.css";
 
 export const Contact = () => {
-  const form = useRef();
-  const YOUR_SERVICE_ID = process.env.YOUR_SERVICE_ID;
-  const YOUR_TEMPLATE_ID = process.env.YOUR_TEMPLATE_ID;
-  const YOUR_PUBLIC_KEY = process.env.YOUR_PUBLIC_KEY;
+  const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,14 +16,23 @@ export const Contact = () => {
       form.current, 
       "hVMGP3Abq7X8FCK-O")
       .then((result) => {
-          console.log(result.text);
-          console.log("Mensaje enviado")
+          console.log("Mensaje enviado", result.text);
+          Swal.fire({
+            icon: 'success',
+            title: 'Mensaje enviado!',
+            text: 'En breves te responderé',
+          })
       }, (error) => {
-          console.log(error.text);
-      });
-  };
-
-
+          console.log("Todo ha fallado, el horror", error.text);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Hubo un error, probá de nuevo más tarde por favor'
+          })
+        });
+      e.target.reset();
+    };
+    
   return (
     <section className={Styles.contact_section} id="contact">
         <h2 className={Styles.contact_title}>Conectemos</h2>
@@ -34,7 +41,7 @@ export const Contact = () => {
         
         <div className={Styles.contact_container_grid}>
             <div className={Styles.contact_content}>
-                <h3 className={Styles.contact_content_title}>Si querés saber más sobre mí</h3>
+                <h3 className={Styles.contact_content_title}>: : : Si querés saber más sobre mí</h3>
                 
                 <div className={Styles.contact_info}>
                   <div className={Styles.contact_card}>
@@ -63,7 +70,7 @@ export const Contact = () => {
             </div>
 
             <div className={Styles.contact_content}>
-                <h3 className={Styles.contact_content_title}>Si querés compartirme tu idea</h3>
+                <h3 className={Styles.contact_content_title}>: : : Si querés compartirme tu idea</h3>
             
                 <form className={Styles.contact_form} ref={form} onSubmit={sendEmail}>
                   <div className={Styles.contact_form_div}>
@@ -91,8 +98,8 @@ export const Contact = () => {
                     name="message"
                     cols="30"
                     rows="10"
+                    placeholder="Compartime tu proyecto o ideas..."  
                     className={Styles.contact_form_area}>
-                      Compartime tu proyecto o ideas...
                     </textarea>
                   </div>
 

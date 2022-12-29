@@ -2,12 +2,10 @@ import React from 'react';
 import { BsPatchCheck } from "react-icons/bs";
 import Styles from "./Skills.module.css";
 
-/* HTML5, CSS, JAVASCRIPT, REACT, REDUX/REDUX TOOLKIT, TAILWIND */
-
 export const Front = () => {
   return (
     <div className={Styles.skills_content}>
-        <h3 className={Styles.skills_title}>Front-End Developer</h3>
+        <h3 className={Styles.skills_title}>: : Front-End Developer : :</h3>
 
         <div className={Styles.skills_box}>
 

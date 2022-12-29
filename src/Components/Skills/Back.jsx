@@ -7,7 +7,7 @@ import Styles from "./Skills.module.css";
 export const Back = () => {
   return (
     <div className={Styles.skills_content}>
-        <h3 className={Styles.skills_title}>Back-End Developer</h3>
+        <h3 className={Styles.skills_title}>: : Back-End Developer : :</h3>
 
         <div className={Styles.skills_box}>
 
