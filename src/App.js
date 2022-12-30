@@ -15,9 +15,9 @@ function App() {
       <NavBar />
       <main className="main" >
         <Home />
+        <Portfolio />
         <About />
         <Skills />
-        <Portfolio />
         <Contact />
         <Footer />
       </main>

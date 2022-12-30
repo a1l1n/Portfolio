@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nunito:wght@300;400&display=swap');
+
 .footer {
     background-color: rgba(0, 0, 0, 0.87);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -28,6 +30,7 @@
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.8rem;
+    font-family: 'Jost', sans-serif;
 }
 
 .footer_list {

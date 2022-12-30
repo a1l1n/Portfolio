@@ -20,6 +20,12 @@ export const NavBar = () => {
                     </li>
 
                     <li className={Styles.nav_menu_item}>
+                        <AiOutlinePicture className={Styles.nav_menu_icon}/>
+                        <a href='#portfolio' className={Styles.nav_menu_link}> Portfolio 
+                        </a>
+                    </li>
+
+                    <li className={Styles.nav_menu_item}>
                         <AiOutlineUser className={Styles.nav_menu_icon}/>
                         <a href='#about' className={Styles.nav_menu_link}> About
                         </a>
@@ -36,12 +42,6 @@ export const NavBar = () => {
                         <a href='#services' className={Styles.nav_menu_link}> Servicios 
                         </a>
                     </li> */}
-
-                    <li className={Styles.nav_menu_item}>
-                        <AiOutlinePicture className={Styles.nav_menu_icon}/>
-                        <a href='#portfolio' className={Styles.nav_menu_link}> Portfolio 
-                        </a>
-                    </li>
 
                     <li className={Styles.nav_menu_item}>
                         <AiOutlineSend className={Styles.nav_menu_icon}/>
