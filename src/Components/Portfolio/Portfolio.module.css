@@ -50,7 +50,6 @@
 
 .portfolio_card_title {
     margin-top: 2.5rem;
-/*     margin-bottom: 1rem; */
 }
 
 .portfolio_img {
@@ -113,7 +112,7 @@
     z-index: 1;
     opacity: 0;
     visibility: hidden; 
-    
+    text-align: center;
 }
 
 .portfolio_modal_active {
@@ -203,6 +202,18 @@
         width: 20rem;  
         margin-bottom: 2rem;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .portfolio_section {
+        height: 1850px;
+    } 
+
+    .portfolio_img {
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+
 }
 
 

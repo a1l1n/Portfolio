@@ -38,7 +38,7 @@ export const Cards = () => {
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={() => clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
                 <img src={modelGuitar} className={Styles.portfolio_modal_img} />
-                <h3 className={Styles.porftolio_modal_text}>: : : Componente de Pre-Pago con formulario incluido : : :</h3>
+                <h3 className={Styles.porftolio_modal_text}>Componente de Pre-Pago con formulario</h3>
             </div>
           </div> 
           
@@ -61,7 +61,7 @@ export const Cards = () => {
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={()=> clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
               <img src={modelFunky} className={Styles.portfolio_modal_img} />
-              <h3 className={Styles.porftolio_modal_text}>: : : Landing Page : : :</h3>
+              <h3 className={Styles.porftolio_modal_text}>Landing Page</h3>
             </div>
           </div>
         
@@ -83,7 +83,7 @@ export const Cards = () => {
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={()=> clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
               <img src={modelVideo} className={Styles.portfolio_modal_img} />
-              <h3 className={Styles.porftolio_modal_text}>: : : Componete con el resultado de una búsqueda : : :</h3>
+              <h3 className={Styles.porftolio_modal_text}>Resultado de una búsqueda</h3>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export const Cards = () => {
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={()=> clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
               <img src={modelSailor} className={Styles.portfolio_modal_img} />
-              <h3 className={Styles.porftolio_modal_text}>: : : Página principal : : :</h3>
+              <h3 className={Styles.porftolio_modal_text}> Página principal</h3>
             </div>
           </div>
 
