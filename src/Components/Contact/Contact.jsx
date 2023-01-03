@@ -32,6 +32,10 @@ export const Contact = () => {
         });
       e.target.reset();
     };
+
+    function validate(user) {
+
+    }
     
   return (
     <section className={Styles.contact_section} id="contact">
@@ -78,9 +82,9 @@ export const Contact = () => {
                     <input 
                     type="text"
                     name="user_name"
-                    
                     className={Styles.contact_form_input}
-                    placeholder="Decime tu nombre" />
+                    placeholder="Decime tu nombre" 
+                    required/>
                   </div>
 
                   <div className={Styles.contact_form_div}>
@@ -89,7 +93,8 @@ export const Contact = () => {
                     type="email"
                     name="user_email"
                     className={Styles.contact_form_input}
-                    placeholder="Dejame tu mail" />
+                    placeholder="Dejame tu mail" 
+                    required/>
                   </div>
 
                   <div className={Styles.contact_form_div}>
