@@ -45,7 +45,7 @@
 
 .about_box {
     background-color: white;
-    border: 1px solid rgba(175, 150, 6, 0.281); 
+    border: 1px solid rgba(136, 136, 136, 0.281); 
 /*     border: 1px solid rgba(0, 0, 0, 0.164); */
     border-radius: 5px;
     text-align: center;
@@ -163,7 +163,6 @@
      .about_section {
         position: relative; 
         padding: 0; 
-/*         margin-bottom: 4rem; */
         bottom: 4rem;
      }
 }

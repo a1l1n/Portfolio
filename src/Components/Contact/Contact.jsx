@@ -33,9 +33,17 @@ export const Contact = () => {
       e.target.reset();
     };
 
-    function validate(user) {
-
-    }
+/*     function validate(user) {
+      let errors = {};
+      if (!user.fullname.trim()) {
+        errors.fullname = 'Username is required';
+      };
+      if (!user.mail) {
+        errors.mail = "Por favor ingresá un mail"
+      } else if (!/\S+@\S+\.\S+/.test(user.email)) {
+        errors.mail = "Por favor ingresá un mail válido"
+      }
+    } */
     
   return (
     <section className={Styles.contact_section} id="contact">
