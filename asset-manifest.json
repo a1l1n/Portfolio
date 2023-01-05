@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e5ff1f1c.css",
-    "main.js": "/Portfolio/static/js/main.2da2e8d2.js",
+    "main.css": "/Portfolio/static/css/main.f8947b37.css",
+    "main.js": "/Portfolio/static/js/main.e3bcfcb1.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/modelSailor.png": "/Portfolio/static/media/modelSailor.75a45fd91c15ba8fa2b7.png",
     "static/media/modelVideo.png": "/Portfolio/static/media/modelVideo.54db0401c04c78f88d33.png",
@@ -15,12 +15,12 @@
     "static/media/Guitar2.jpg": "/Portfolio/static/media/Guitar2.02f7a577df87fbe95218.jpg",
     "static/media/CV-Tobares Ailin.pdf": "/Portfolio/static/media/CV-Tobares Ailin.3856eea4c222f8558aed.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.e5ff1f1c.css.map": "/Portfolio/static/css/main.e5ff1f1c.css.map",
-    "main.2da2e8d2.js.map": "/Portfolio/static/js/main.2da2e8d2.js.map",
+    "main.f8947b37.css.map": "/Portfolio/static/css/main.f8947b37.css.map",
+    "main.e3bcfcb1.js.map": "/Portfolio/static/js/main.e3bcfcb1.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5ff1f1c.css",
-    "static/js/main.2da2e8d2.js"
+    "static/css/main.f8947b37.css",
+    "static/js/main.e3bcfcb1.js"
   ]
 }
