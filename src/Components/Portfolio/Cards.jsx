@@ -97,6 +97,7 @@ export const Cards = () => {
         <div>
           <div className={Styles.portfolio_info}>
             <a  href="https://github.com/a1l1n/Sailor-Weather-App" target="_blank" className={Styles.portfolio_code}><AiOutlineGithub className={Styles.portfolio_info_icon}/>Code</a>
+            <a  href="https://sailor-weather-app.vercel.app/" target="_blank" className={Styles.portfolio_demo}>Demo <AiOutlineArrowRight className={Styles.portfolio_info_icon}/></a>
           </div>
 
           <div className={modal === 4 ? Styles.portfolio_modal_active : Styles.portfolio_modal}>
