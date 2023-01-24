@@ -15,7 +15,7 @@ export const NavBar = () => {
 
                     <li className={Styles.nav_menu_item}>
                         <AiOutlineHome className={Styles.nav_menu_icon}/>
-                        <a href='#home' className={Styles.nav_menu_link}> Home
+                        <a href='#home' className={Styles.nav_menu_link}> Principal
                         </a>
                     </li>
 
@@ -27,7 +27,7 @@ export const NavBar = () => {
 
                     <li className={Styles.nav_menu_item}>
                         <AiOutlineUser className={Styles.nav_menu_icon}/>
-                        <a href='#about' className={Styles.nav_menu_link}> About
+                        <a href='#about' className={Styles.nav_menu_link}> Sobre mí
                         </a>
                     </li>
 
