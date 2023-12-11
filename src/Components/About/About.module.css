@@ -3,21 +3,24 @@
 
 .about_section {
     height: 100vh;
-    width: 70%;
+    position: relative;
+/*     background-color: yellow; */
+    width: 80%;
     padding-top: 6em;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    z-index: 0;
 }
 
 .about_container {
+    position: relative;
+    z-index: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
     align-items: center;
     margin-left: 3rem;
     margin-top: 3rem;
+    height: auto;
 }
 
 .about_title_section {

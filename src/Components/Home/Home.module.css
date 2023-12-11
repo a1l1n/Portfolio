@@ -4,7 +4,8 @@
 .home_section {
     height: 100vh;
     padding-top: 3.8em; 
-    background-color: rgba(223, 222, 222, 0.2);
+    z-index: 1;
+    position: relative
 }
 
 .home_container {

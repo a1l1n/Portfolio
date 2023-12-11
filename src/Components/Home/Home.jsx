@@ -11,7 +11,7 @@ export const Home = () => {
          <div className={Style.home_content}>
           <Social />
           <Data />
-          <div className={Style.home_img}></div> 
+{/*           <div className={Style.home_img}></div>  */}
          </div>
          <ScrollDown />
        </div>

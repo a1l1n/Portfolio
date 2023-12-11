@@ -7,7 +7,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <App />
+    <div className="grid-container">
+    {Array(1000).fill().map((_, index) => (
+      <div key={index} className="grid-item"></div>
+      ))}
+    </div>
   </React.StrictMode>
 );
 
