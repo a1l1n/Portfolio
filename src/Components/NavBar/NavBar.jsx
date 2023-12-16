@@ -1,59 +1,52 @@
 import React, { useState } from 'react';
 import { AiOutlineHome, AiOutlineUser, AiOutlineFileDone, AiOutlinePicture, AiOutlineSend, AiOutlineClose, AiOutlineAppstore } from "react-icons/ai";
 import { BsBriefcase, BsCircleFill } from "react-icons/bs";
+import { VscColorMode } from "react-icons/vsc"
 import Styles from "./NavBar.module.css";
 
 export const NavBar = () => {
     const [ Toggle, showMenu ] = useState(false);
+ 
+    const [selectedItem, setSelectedItem] = useState(0);
+    const items = ['Principal', 'Proyectos', 'Sobre mí', 'Habilidades', 'Contacto'];
+
+    const activate = (index) => {
+        setSelectedItem(index);
+    };
 
   return (
-    <header className={Styles.header}>
+    <header className={`${Styles.header} ${Styles.fixedBottom}`}>
         <nav className={Styles.nav}>
-            <div className={Styles.nav_logo}><BsCircleFill className={Styles.nav_logo_icon} />Portfolio</div> 
-            <div className={Toggle ? Styles.show_menu : Styles.nav_menu}>
-                <ul className={Styles.nav_menu_grid}>
-
-                    <li className={Styles.nav_menu_item}>
-                        <AiOutlineHome className={Styles.nav_menu_icon}/>
-                        <a href='#home' className={Styles.nav_menu_link}> Principal
-                        </a>
-                    </li>
-
-                    <li className={Styles.nav_menu_item}>
-                        <AiOutlinePicture className={Styles.nav_menu_icon}/>
-                        <a href='#portfolio' className={Styles.nav_menu_link}> Portfolio 
-                        </a>
-                    </li>
-
-                    <li className={Styles.nav_menu_item}>
-                        <AiOutlineUser className={Styles.nav_menu_icon}/>
-                        <a href='#about' className={Styles.nav_menu_link}> Sobre mí
-                        </a>
-                    </li>
-
-                    <li className={Styles.nav_menu_item}>
-                        <AiOutlineFileDone className={Styles.nav_menu_icon}/>
-                        <a href='#skills' className={Styles.nav_menu_link}> Skills
-                        </a>
-                    </li>
-
-{/*                     <li className={Styles.nav_menu_item}>
-                        <BsBriefcase className={Styles.nav_menu_icon}/>
-                        <a href='#services' className={Styles.nav_menu_link}> Servicios 
-                        </a>
-                    </li> */}
-
-                    <li className={Styles.nav_menu_item}>
-                        <AiOutlineSend className={Styles.nav_menu_icon}/>
-                        <a href='#contact' className={Styles.nav_menu_link}> Contacto
-                        </a>
-                    </li>
-                </ul>
-                <AiOutlineClose className={Styles.nav_close} onClick={() => showMenu(!Toggle)}/>
+            <ul className={Styles.nav_container}>
+            {items.map((item, index) => (
+                <li
+                key={index}
+                className={`${Styles.nav_menu_item} ${selectedItem ==   index ? Styles.nav_menu_active : ''}`}
+                onClick={() => activate(index)}
+                >
+                  <a href={`#${item}`} className={Styles.nav_menu_link}>
+                    {index === 0 && <AiOutlineHome className={Styles.nav_menu_icon} />}
+                    {index === 1 && <AiOutlinePicture className={Styles.nav_menu_icon} />}
+                    {index === 2 && <AiOutlineUser className={Styles.nav_menu_icon} />}
+                    {index === 3 && <AiOutlineFileDone className={Styles.nav_menu_icon}/>}
+                    {index === 4 && <AiOutlineSend className={Styles.nav_menu_icon} />}
+                    {item}
+                  </a>
+                </li>
+             ))}   
+                <li className={Styles.nav_menu_mode}>
+                  <VscColorMode className={Styles.nav_menu_icon} />
+                  Modo
+                </li>
+            </ul>
+            <div id='bottom-navbar-indicator' className={`${Styles.indicator} ${Styles[`indicator-${selectedItem}`]}`}></div>
+{/*             <div>
+            <AiOutlineClose className={Styles.nav_close} onClick={() => showMenu(!Toggle)}/>
             </div>
             <div className={Styles.nav_toggle} onClick={() => showMenu(!Toggle)}>
-                <AiOutlineAppstore />
-            </div>
+            <AiOutlineAppstore />
+            </div> */}
+
         </nav>
     </header>
   )

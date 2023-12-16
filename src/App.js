@@ -12,8 +12,8 @@ function App() {
   return (
     <div className='App'>
       <NavBar />
-      <Home />
 {/*       <main className="main" >
+      <Home />
         <Portfolio />
         <About />
         <Skills />
