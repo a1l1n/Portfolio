@@ -4,6 +4,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;   
+    z-index: 15;
 }
 
 .fixedBottom {
@@ -15,8 +16,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 75px;
-    width: 755px;
+    height: 80px;
+    width: 720px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -39,7 +40,7 @@
     list-style: none;
     width: 70px;
     transform: 0.3s;
-    color: rgb(255, 166, 0);
+    color: var(--secondary-color);
     user-select: none;
     display: flex;
     flex-direction: column;
@@ -59,19 +60,20 @@
 }
 
 .nav_menu_icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     height: 50%;
     transition: 0.3s;
     margin-bottom: .5rem;
+    color: var(--text-color);
 }
 
 /* Indicador */
 .indicator {
-    background-color: #ffe605c0;
+    background-color: var(--navbar-background);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 10px 10px;
     width: 90px;
-    height: 75px;
+    height: 80px;
     position: absolute;
     top: -10px;
     left: 0;
@@ -80,29 +82,29 @@
 }
 
 .indicator-0 {
-    left: 6%;
+    left: 5.6%;
 }
 
 .indicator-1 {
-    left: calc(1 * (75px + 85px));
+    left: calc(1 * (75px + 75px));
 }
 
 .indicator-2 {
-    left: calc(2 * (75px + 63px));
+    left: calc(2 * (75px + 55px));
 }
 
 .indicator-3 {
-    left: calc(3 * (75px + 55px));
+    left: calc(3 * (75px + 48px));
 }
 
 .indicator-4 {
-    left: calc(4 * (75px + 51px));
+    left: calc(4 * (75px + 45px));
 }
 
 /* Active */
 .nav_menu_item.nav_menu_active,
 .nav_menu_item.nav_menu_active a {
-    color: #333; 
+    color: var(--text-color); 
 }
 
 .nav_menu_active {
@@ -111,14 +113,20 @@
     z-index: 15; 
 }
 
-
-/* .nav_menu_active {
-    transform: translateY(-10px);
+.nav_close, .nav_toggle {
+    display: none;
 }
 
-.nav_menu_active a {
-    transform: scale(1.1);
-} */
+.nav_menu_grid {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    list-style: none;
+}
+
+.nav_menu_grid a {
+    text-decoration: none;
+}
 
 /* .nav_logo, .nav_toggle {
     color: rgb(51, 51, 53);
@@ -131,21 +139,6 @@
     margin-right: 5px;
 }
 
-.nav_menu_grid {
-    display: flex;
-    align-items: center;
-    column-gap: 3rem;
-    list-style: none;
-}
-
-
-.nav_menu_grid a {
-    text-decoration: none;
-}
-
-.nav_close, .nav_toggle, .nav_menu_icon {
-    display: none;
-}
 
 .nav_menu_item  {
     display: flex;

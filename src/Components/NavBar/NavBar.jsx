@@ -17,6 +17,13 @@ export const NavBar = () => {
   return (
     <header className={`${Styles.header} ${Styles.fixedBottom}`}>
         <nav className={Styles.nav}>
+            {
+              Toggle ? 
+              <div className={Styles.nav_logo}><BsCircleFill className={Styles.nav_logo_icon} />Portfolio</div>
+              :
+              null 
+            }
+            
             <ul className={Styles.nav_container}>
             {items.map((item, index) => (
                 <li
@@ -40,12 +47,12 @@ export const NavBar = () => {
                 </li>
             </ul>
             <div id='bottom-navbar-indicator' className={`${Styles.indicator} ${Styles[`indicator-${selectedItem}`]}`}></div>
-{/*             <div>
+            <div>
             <AiOutlineClose className={Styles.nav_close} onClick={() => showMenu(!Toggle)}/>
             </div>
             <div className={Styles.nav_toggle} onClick={() => showMenu(!Toggle)}>
             <AiOutlineAppstore />
-            </div> */}
+            </div>
 
         </nav>
     </header>

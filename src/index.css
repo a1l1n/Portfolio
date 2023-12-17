@@ -2,8 +2,9 @@
   --theme-color: white;
   --cell-color: #c1e7ff;
   --primary-color: rgb(39, 39, 39);
-  --secondary-color: #EE8000;
-  --text-color: rgb(39, 39, 39);
+  --secondary-color: rgb(255, 123, 0);
+  --text-color: #333;
+  --navbar-background: #ffe605c0;
   --menu-mobile-background-color: white;
 }
 
