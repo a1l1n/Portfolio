@@ -2,6 +2,8 @@ import React from 'react';
 import { AiOutlineSend, AiOutlineInstagram, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import Profile from '../../../assets/Profile2.jpeg'
 import Styles from './Data.module.css'
+import { Duck, Bug } from '../../../assets/Icons';
+
 
 export const Data = () => {
   return (
@@ -11,6 +13,9 @@ export const Data = () => {
         <div className={Styles.data_head}>
           <div className={Styles.data_profile_image}>
             <img src={Profile} alt='Profile image' className={Styles.data_image}/>
+            <div className={Styles.data_duck}>
+              <Duck />
+            </div>
           </div>
 
           <div className={Styles.data_title}>
@@ -43,6 +48,9 @@ export const Data = () => {
               <AiOutlineSend className={Styles.data_button_icon}/>
             </a>
         </div>
+            <div className={Styles.data_bug}>
+              <Bug />
+            </div>
       </div>
     </div>
   )
