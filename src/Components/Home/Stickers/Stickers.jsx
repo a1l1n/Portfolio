@@ -10,7 +10,7 @@ export const Stickers = () => {
     <div className={Styles.stickers_container}>
       {
         icons?.map((sticker, index) => (
-          <div id={index}>
+          <div id={index} className={Styles.stickers_sticker}>
             {sticker}
           </div>
         ))

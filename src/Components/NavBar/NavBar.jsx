@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
-import { AiOutlineHome, AiOutlineUser, AiOutlineFileDone, AiOutlinePicture, AiOutlineSend, AiOutlineClose, AiOutlineAppstore } from "react-icons/ai";
-import { BsBriefcase, BsCircleFill } from "react-icons/bs";
+import { BsCircleFill } from "react-icons/bs";
 import { VscColorMode } from "react-icons/vsc"
+import { AiOutlineHome, 
+  AiOutlineUser, 
+  AiOutlineFileDone, 
+  AiOutlinePicture, 
+  AiOutlineSend, 
+  AiOutlineClose, 
+  AiOutlineAppstore } from "react-icons/ai";
 import Styles from "./NavBar.module.css";
 
 export const NavBar = () => {
     const [ Toggle, showMenu ] = useState(false);
+    console.log("Esto es Toggle: ", Toggle)
  
     const [selectedItem, setSelectedItem] = useState(0);
     const items = ['Principal', 'Proyectos', 'Sobre mí', 'Habilidades', 'Contacto'];
@@ -19,7 +26,10 @@ export const NavBar = () => {
         <nav className={Styles.nav}>
             {
               Toggle ? 
-              <div className={Styles.nav_logo}><BsCircleFill className={Styles.nav_logo_icon} />Portfolio</div>
+              <div className={Styles.nav_logo}>
+                <BsCircleFill className={Styles.nav_logo_icon} />
+                Portfolio
+              </div>
               :
               null 
             }
