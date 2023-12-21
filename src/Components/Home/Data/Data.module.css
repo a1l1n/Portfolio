@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
 
 .data_container {
-    width: 520px;
-    height: 480px;
+    width: 31.5rem;
+    height: 30rem;
     margin-top: 3em;
     border-radius: 10px;
     transform: rotate(-5deg);
+    transition: 0.3s;
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -173,5 +174,86 @@
 .data_duck {
     left: 26em;
     bottom: 4em;
+    transition: 0.3s;
     transform: rotate(4deg);
+}
+
+/* MEDIA - QUERY ------------------------------------ */
+@media screen and (max-width: 640px) {
+    .data_container {
+        transform: rotate(0deg);
+        transition: 0.3s
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .data_container {
+        width: 28rem;
+    }
+
+    .data_box {
+        width: 24rem;
+    }
+
+    .data_duck {
+        left: 22em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .data_container {
+        width: 18.5rem;
+        margin-top: 5em;
+    }
+
+    .data_box {
+        width: 17rem;
+    }
+
+    .data_head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data_profile_image {
+        position: relative;
+        width: 42%;
+        top: 0.5rem
+    }
+
+    .data_duck {
+        left: 9em;
+        bottom: 2.5em;
+    }
+
+    .data_title {
+        padding-bottom: 8em;
+    }
+
+    .data_info {
+        width: 15rem;
+        margin: auto;
+    }
+
+    .data_social {
+        margin-left: 1em;
+    }
+
+    .data_social_icon {
+        font-size: 30px;
+    }
+
+    .data_description {
+        font-size: 15px;
+        margin-left: 1em;
+    }
+
+    .data_button {
+        margin: auto;
+    }
+
+    .data_bug {
+        top: 2em
+    }
 }

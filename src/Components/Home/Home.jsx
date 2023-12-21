@@ -8,8 +8,8 @@ export const Home = () => {
   return (
     <section className={Style.home_section} id="Principal">
        <div className={Style.home_container}>
-           <Stickers />
-           <Data />
+           <Stickers className={Style.stickers} />
+           <Data className={Style.data} />
        </div>
     </section>
   )
