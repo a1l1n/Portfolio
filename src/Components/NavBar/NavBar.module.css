@@ -14,8 +14,6 @@
 
 .nav {
     position: relative;
-    display: flex;
-    align-items: center;
     height: 80px;
     width: 720px;
     border-radius: 10px;
@@ -28,7 +26,8 @@
     position: relative;
     width: 90%;
     height: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,11 +58,15 @@
     transition: 0.3s;
 }
 
+.show_menu {
+    margin-top: 0.8em;
+}
+
 .nav_menu_icon {
     font-size: 1.8rem;
     height: 50%;
     transition: 0.3s;
-    margin-bottom: .5rem;
+    margin-bottom: .4rem;
     color: var(--text-color);
 }
 
@@ -115,26 +118,8 @@
 
 /* --------------------------------------------------- */
 
-.nav_close, .nav_toggle, .nav_logo {
+.nav_close, .nav_close_inactive, .nav_toggle, .nav_logo {
     display: none;
-}
-
-.nav_menu_grid {
-    display: flex;
-    align-items: center;
-    column-gap: 3rem;
-    list-style: none;
-}
-
-.nav_menu_grid a {
-    text-decoration: none;
-}
-
-
-.nav_logo, .nav_toggle {
-    color: rgb(51, 51, 53);
-    font-size: 22px;
-    font-weight: 500;
 }
 
 .nav_logo_icon {
@@ -142,39 +127,56 @@
     margin-right: 5px;
 }
 
-
-.nav_menu_item  {
+.nav_menu_item, .nav_menu_mode  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* MEDIA - QUERY ------------------------------------ */
 /* MEDIUM DEVICES ----------------------------------- */
 
-@media screen and (max-width: 801px){
-    
+@media screen and (max-width: 801px){   
     .fixedBottom {
-        bottom: 0;
         margin-bottom: 0;
     }
+
     .nav {
-        transition: .3s;
-        z-index: 2;
         width: 100%;
-        height: 180px;
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
     } 
 
     .nav_container {
+        display: none;
+    }
+    
+    .nav_menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 180px;
+        width: 100%;
+        padding: 2rem 1.5rem 4rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        transition: .3s;
+        background-color: white;
+    }
+    
+    .show_menu {
+        bottom: 0;
+    }
+
+    .nav_menu_grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-content: center;   
-        margin-top: 0.6em;
+        margin: auto;
     }
 
     .nav_menu_item, .nav_menu_mode {
@@ -190,18 +192,13 @@
         display: none;
     }
 
-/*     .nav_menu_grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }  */
-
     .nav_menu_icon {
         font-size: 1.2rem;
     }
 
     .nav_close {
         position: absolute;
+        z-index: 2;
         right: 2rem;
         bottom: .5rem; 
         font-size: 1.5rem;
@@ -209,16 +206,29 @@
         color: black
     }
 
-    .nav_close:hover {
-        color:rgb(175, 150, 6);
+    .nav_close_inactive {
+        display: none;
+    }
+
+    .nav_close:hover, .nav_toggle:hover {
+    /*     color:rgb(175, 150, 6); */
+    color: var(--secondary-color);
     }
 
     .nav_toggle {
-        font-size: 1.1rem;
         cursor: pointer;
+        margin-right: 2em;
+        font-size: 20px;
     }
-    .nav_close, .nav_toggle, .nav_menu_icon {
+    .nav_close, .nav_toggle, .nav_logo {
         display: block;
+        color: var(--text-color)
+    }
+
+    .nav_logo {
+        position: relative;
+        margin-left: 2em;
+        font-size: 20px;
     }
 }
 
@@ -226,44 +236,6 @@
 @media screen and (max-width: 360px) {
     .nav_menu {
         padding: 2rem .25rem 4rem;
-    }
-
-    .nav_menu_grid {
-        column-gap: 0;
-    }
-
-    .indicator {
-        width: 90px;
-        height: 4.375rem;
-        top: 10px;
-        z-index: 5;
-        display: flex;
-    }
-
-    .indicator-0 {
-        left: 14%;
-    }
-    
-    .indicator-1 {
-        left: calc(1 * (75px + 117px));
-    }
-    
-    .indicator-2 {
-        left: calc(2 * (75px + 83px));
-    }
-    
-    .indicator-3 {
-        left: calc(3 * (0px + 23px));
-        top: 80px;
-    }
-    
-    .indicator-4 {
-        left: calc(4 * (0px + 48px));
-        top: 80px
-    }
-
-    .nav_menu_active {
-        transform: translateY(0px); 
     }
 }
 

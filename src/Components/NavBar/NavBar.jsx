@@ -12,7 +12,7 @@ import Styles from "./NavBar.module.css";
 
 export const NavBar = () => {
     const [ Toggle, showMenu ] = useState(false);
-    console.log("Esto es Toggle: ", Toggle)
+    console.log(Toggle)
  
     const [selectedItem, setSelectedItem] = useState(0);
     const items = ['Principal', 'Proyectos', 'Sobre mí', 'Habilidades', 'Contacto'];
@@ -25,7 +25,7 @@ export const NavBar = () => {
     <header className={`${Styles.header} ${Styles.fixedBottom}`}>
         <nav className={Styles.nav}>
             {
-              Toggle ? 
+              !Toggle ? 
               <div className={Styles.nav_logo}>
                 <BsCircleFill className={Styles.nav_logo_icon} />
                 Portfolio
@@ -33,8 +33,9 @@ export const NavBar = () => {
               :
               null 
             }
-            
-            <ul className={Styles.nav_container}>
+       <div className={Toggle ? Styles.nav_menu : Styles.show_menu }>
+       
+            <ul className={Toggle ? Styles.nav_menu_grid : Styles.nav_container}>
             {items.map((item, index) => (
                 <li
                 key={index}
@@ -56,10 +57,13 @@ export const NavBar = () => {
                   Modo
                 </li>
             </ul>
-            <div id='bottom-navbar-indicator' className={`${Styles.indicator} ${Styles[`indicator-${selectedItem}`]}`}></div>
+       </div>            
+            <div id='bottom-navbar-indicator' className={ `${Styles.indicator} ${Styles[`indicator-${selectedItem}`]}` }></div>
+            
             <div>
-            <AiOutlineClose className={Styles.nav_close} onClick={() => showMenu(!Toggle)}/>
+            <AiOutlineClose className={Toggle ? Styles.nav_close : Styles.nav_close_inactive} onClick={() => showMenu(!Toggle)}/>
             </div>
+            
             <div className={Styles.nav_toggle} onClick={() => showMenu(!Toggle)}>
             <AiOutlineAppstore />
             </div>
