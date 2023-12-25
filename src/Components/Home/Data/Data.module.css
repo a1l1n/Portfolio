@@ -107,7 +107,7 @@
 }
 
 .data_social_icon:hover {
-    color: #2846da;
+    color: var(--third-color);
 }
 
 .data_description {
