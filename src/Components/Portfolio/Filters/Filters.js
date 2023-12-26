@@ -6,12 +6,6 @@ export const Filters = ({ selectedFilter, onFilterChange }) => {
   return (
     <div className={Styles.filter_container}>
       <button
-        onClick={() => onFilterChange('Todos')} 
-        className={`${Styles.filter_button} 
-        ${selectedFilter === 'Todos' ? Styles.filter_button_all_active : Styles.filter_button_all}`}>
-        Todos
-      </button>
-      <button
         onClick={() => onFilterChange('Full-Stack')} 
         className={`${Styles.filter_button} 
         ${Styles.filter_button_full}
@@ -33,6 +27,12 @@ export const Filters = ({ selectedFilter, onFilterChange }) => {
         ${Styles.filter_button_pair}
         ${selectedFilter === 'Back-End' ? Styles.filter_button_back_active : null}`}>
         Back-End
+      </button>
+      <button
+        onClick={() => onFilterChange('Todos')} 
+        className={`${Styles.filter_button} 
+        ${selectedFilter === 'Todos' ? Styles.filter_button_all_active : Styles.filter_button_all}`}>
+        Todos
       </button>
     </div>
   )

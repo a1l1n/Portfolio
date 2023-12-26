@@ -58,9 +58,7 @@ export const Cards = ({ works, selectedFilter }) => {
                 }
               </div>
             </div>
-
           </div>
-          
         ))
       }
     </div>

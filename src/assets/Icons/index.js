@@ -10,4 +10,7 @@ export { Code } from './Home/Code'
 
 // Portfolio
 export { Creative } from './Portfolio/Creative'
+export { ApiIcon } from './Portfolio/ApiIcon'
+export { FlowChart } from './Portfolio/FlowChart'
+export { HtmlIcon } from './Portfolio/HtmlIcon'
 export { Tools } from './Portfolio/Tools'

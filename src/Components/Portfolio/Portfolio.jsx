@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; 
-import { Tools } from '../../assets/Icons';
+import { ApiIcon, FlowChart, HtmlIcon, Tools } from '../../assets/Icons';
 import { Cards } from "./Cards/Cards";
 import { Filters } from './Filters/Filters';
 import works from "../../assets/projects";
@@ -16,8 +16,16 @@ export const Portfolio = () => {
     <section className={Styles.portfolio_section} id="Proyectos">
 
         <div className={Styles.portfolio_menu}>
-
           <div className={Styles.portfolio_card}>
+          <div className={Styles.portfolio_icon_html}>
+            <HtmlIcon />
+          </div>
+          <div className={Styles.portfolio_icon_flow}>
+            <FlowChart />
+          </div>
+          <div className={Styles.portfolio_icon_api}>
+            <ApiIcon />
+          </div>
             <div className={Styles.portfolio_inner_card}>
               <h1>Proyectos</h1>
               <Tools />
