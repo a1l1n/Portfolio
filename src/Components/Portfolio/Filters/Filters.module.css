@@ -27,24 +27,51 @@
     margin-left: 3em;
 }
 
+.filter_button_all {
+    border: 1px solid #8bd18f;
+    color: #518d56;
+    transition: 0.4s;
+}
+
 .filter_button_all_active {
     border: 1px solid #8bd18f;
     background-color: #D9FFDB;
+    transition: 0.4s;
 }
 
 .filter_button_full {
     border: 1px solid #F9F1A8;
     color: var(--text-color);
+    transition: 0.4s;
+}
+
+.filter_button_full_active {
+    background-color: #FFFACD;
+    transition: 0.4s;
 }
 
 .filter_button_front {
     border: 1px solid #FCC;
     color: #CA7878;
+    transition: 0.4s;
+}
+
+.filter_button_front_active {
+    background-color: #FFE7FA;
+    color: var(--text-color);
+    transition: 0.4s;
 }
 
 .filter_button_back {
     border: 1px solid #9BE9E9;
-    color: #6670D2;
+    color: #509797;
+    transition: 0.4s;
+}
+
+.filter_button_back_active {
+    background-color: #9BE9E9;
+    color: var(--text-color);
+    transition: 0.4s;
 }
 
 

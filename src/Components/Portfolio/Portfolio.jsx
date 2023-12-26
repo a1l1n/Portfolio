@@ -6,7 +6,11 @@ import works from "../../assets/projects";
 import Styles from "./Portfolio.module.css";
 
 export const Portfolio = () => {
-  const [filtereds, setFilter] = useState([])
+  const [filtered, setFilter] = useState('Todos')
+
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter)
+  }
 
   return (
     <section className={Styles.portfolio_section} id="Proyectos">
@@ -19,11 +23,11 @@ export const Portfolio = () => {
               <Tools />
             </div>
           </div>
-          <Filters />
+          <Filters selectedFilter={filtered} onFilterChange={handleFilterChange} />
         </div>
 
         <div className={Styles.portfolio_container_projects}>
-            <Cards works={works}/>
+            <Cards works={works} selectedFilter={filtered}/>
         </div>
     </section>
   )

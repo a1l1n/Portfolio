@@ -9,5 +9,5 @@ export { Screen } from './Home/Screen'
 export { Code } from './Home/Code'
 
 // Portfolio
-
+export { Creative } from './Portfolio/Creative'
 export { Tools } from './Portfolio/Tools'
