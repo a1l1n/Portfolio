@@ -1,9 +1,9 @@
-import Weather from "./Weather.png";
-import Movies from "./Movies.png";
-import Funky from "./FunkyTravel.png";
-import Guitar from "./Guitar2.jpg";
-import Teas from "./Teas.jpg";
-import StarWars from './StarWars.png'
+import Weather from "../Weather.png";
+import Movies from "../Movies.png";
+import Funky from "../FunkyTravel.png";
+import Guitar from "../Guitar2.jpg";
+import Teas from "../Teas.jpg";
+import StarWars from '../StarWars.png'
 
 
 let works = [

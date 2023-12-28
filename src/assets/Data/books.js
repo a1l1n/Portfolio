@@ -1,0 +1,3 @@
+const bookList = ['https://icsepilar.wordpress.com/bibliografia-2/', 'https://es.wikipedia.org/wiki/It_(novela)', 'https://rescepto.wordpress.com/2017/06/09/trilogia-del-vatidico/', 'https://es.wikipedia.org/wiki/El_Aleph_(libro)', 'https://es.wikipedia.org/wiki/Cien_a%C3%B1os_de_soledad', 'https://es.wikipedia.org/wiki/Gantz', 'https://www.lecturalia.com/libro/12852/cicatrices', 'https://www.pagina12.com.ar/354290-el-golpe-de-la-cucaracha-el-arte-despues-de-la-violencia', 'https://quelibroleo.com/las-tumbas-1']
+
+export default bookList;

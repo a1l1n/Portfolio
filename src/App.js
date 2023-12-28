@@ -14,8 +14,8 @@ function App() {
       <NavBar />
       <Home />
       <Portfolio />
+      <About />
 {/*       <main className="main" >
-        <About />
         <Skills />
         <Contact />
         <Footer />

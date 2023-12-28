@@ -1,8 +1,12 @@
 import React, { useState } from 'react'; 
-import { ApiIcon, FlowChart, HtmlIcon, Tools } from '../../assets/Icons';
+import { ApiIcon, 
+  FlowChart, 
+  HtmlIcon, 
+  Tools } from '../../assets/Icons';
 import { Cards } from "./Cards/Cards";
 import { Filters } from './Filters/Filters';
-import works from "../../assets/projects";
+
+import works from "../../assets/Data/projects";
 import Styles from "./Portfolio.module.css";
 
 export const Portfolio = () => {

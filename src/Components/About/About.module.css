@@ -2,188 +2,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nunito:wght@300;400&display=swap');
 
 .about_section {
-    height: 100vh;
     position: relative;
-/*     background-color: yellow; */
     width: 80%;
-    padding-top: 6em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about_container {
-    position: relative;
-    z-index: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 4rem;
-    align-items: center;
-    margin-left: 3rem;
-    margin-top: 3rem;
     height: auto;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    transition: 0.4s;
 }
 
-.about_title_section {
-    padding-top: 2em;
+.about_menu {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.section_title {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 0.5em;
+
+.about_card {
+    position: relative;
+    z-index: 1;
+    width: 16rem;
+    height: 17rem;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    transform: rotate(-5.558deg);
+    margin-top: 2.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about_inner_card {
+    position: absolute;
+    left: 1.4rem;
+    top: 2rem;
+    z-index: 1;
+    width: 13rem;
+    height: 12.5rem;
+    border: 1px solid rgba(181, 181, 181, 1);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
     font-family: 'Jost', sans-serif;
 }
 
-.about_image {
-    width: 350px;
-    height: 350px;
-    border-radius: 10%;
+.about_inner_card h1 {
+    margin-bottom: 0.5em;
 }
 
-.about_info_grid {
-    display: grid;
-    grid-template-columns: repeat(2, 140px);
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.about_box {
-    background-color: white;
-    border: 1px solid rgba(136, 136, 136, 0.281); 
-/*     border: 1px solid rgba(0, 0, 0, 0.164); */
-    border-radius: 5px;
-    text-align: center;
-    padding: 1rem 1.25rem;
-}
-
-.about_info_icon {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.about_info_title {
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.about_info_subtitle {
-    font-size: 15px;
-}
-
-.about_description {
-    padding: 0 4rem 0 0;
-    margin-bottom: 3.5rem;
-    font-family: 'Nunito', sans-serif;
-}
- 
-/* BUTTON ---------------------------------------------- */
-.about_button {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.705);
-    height: 2.6em;
-    width: 9em;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    transition: .3s ease-in-out;
-}
-
-.about_button_a {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    text-decoration: none;
-}
-
-.about_button_icon {
-    margin-left: 0.8em;
-    margin-top: 4px;
-    align-items: center;
-}
-
-.about_button:hover {
-    background-color: rgba(0, 0, 0, 0.87);
+.about_postits {
+    width: 70%;
 }
 
 /* RESPONSIVE ------------------------------------ */
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .about_section {
-        padding: 3rem;
+        width: 100%;
     }
-    .about_container {
-        grid-template-columns: 1fr;
-        row-gap: 2.5rem;
+
+    .about_menu {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .about_section {
+        flex-direction: column;
+    }
+
+    .about_menu {
+        width: 100%;
         margin: 0;
     }
 
-    .about_title_section {
-        padding: 0;
-        padding-top: 0.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .section_title {
-        font-size: 38px;
-        text-align: center; 
-    }
-
-    .about_image {
-        position: relative; 
-        width: 220px;
-        height: 220px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .about_box {
-        padding: 0.75rem 0.5rem;
-    }
-
-    .about_data {
-        text-align: center;
-    }
-
-    .about_info_grid {
-        justify-content: center;
-    }
-
-    .about_description {
-        padding: 0 5rem;
-        margin-bottom: 2rem;
-    }
-
-    .about_button {
-        margin-left: auto;
-        margin-right: auto;
+    .about_postits {
+        width: 100%;
+        margin: 0;
+        margin-top: 3rem;
     }
 }
-
-@media screen and (max-width: 801px) {
-     .about_section {
-        position: relative; 
-        padding: 0; 
-        bottom: 4rem;
-     }
-}
-
-@media screen and (max-width: 576px) {
-     .about_description {
-         padding: 0;
-     }
-}
-
-@media screen and (max-width: 360px){
-    .about_section {
-        margin-left: 1em;
-    }
-    
-    .section_title {
-        margin-left: 1.5em;
-    }
-}
-
 

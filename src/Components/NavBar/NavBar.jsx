@@ -11,9 +11,7 @@ import { AiOutlineHome,
 import Styles from "./NavBar.module.css";
 
 export const NavBar = () => {
-    const [ Toggle, showMenu ] = useState(false);
-    console.log(Toggle)
- 
+    const [ Toggle, showMenu ] = useState(false); 
     const [selectedItem, setSelectedItem] = useState(0);
     const items = ['Principal', 'Proyectos', 'Sobre mí', 'Habilidades', 'Contacto'];
 
