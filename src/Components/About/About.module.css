@@ -6,6 +6,7 @@
     width: 80%;
     height: auto;
     margin: auto;
+    margin-top: 3rem;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -56,9 +57,68 @@
 
 .about_postits {
     width: 70%;
+    z-index: -1;
+    position: relative;
+}
+
+.about_icon {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+
+.about_star_icon {
+    left: 43rem;
+    top: 2rem;
+}
+
+.about_barchart_icon {
+    left: 36rem;
+    top: 24rem
+}
+
+.about_kitty_icon {
+    left: 61rem;
+    bottom: 13rem
+}
+
+.about_paint_icon {
+    left: 61rem;
+    bottom: 2.5rem
 }
 
 /* RESPONSIVE ------------------------------------ */
+@media screen and (max-width: 1290px) {
+    .about_star_icon {
+        left: 39rem;
+        top: 2rem;
+    }
+    
+    .about_barchart_icon {
+        left: 31rem;
+        top: 24rem
+    }
+    
+    .about_kitty_icon {
+        left: 52rem;
+        bottom: 13rem
+    }
+    
+    .about_paint_icon {
+        left: 52rem;
+        bottom: 2.5rem
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .about_section {
         width: 100%;
@@ -66,6 +126,47 @@
 
     .about_menu {
         margin-left: 3rem;
+    }
+
+    .about_star_icon {
+        left: 41rem;
+        top: 2rem;
+    }
+    
+    .about_barchart_icon {
+        left: 33rem;
+        top: 24rem
+    }
+    
+    .about_kitty_icon {
+        left: 56rem;
+        bottom: 13rem
+    }
+    
+    .about_paint_icon {
+        left: 57rem;
+        bottom: 2.5rem
+    }
+}
+
+@media screen and (max-width: 1012px) {
+    .about_star_icon {
+        left: 20rem;
+    }
+    
+    .about_barchart_icon {
+        left: 14rem;
+        top: 21rem
+    }
+    
+    .about_kitty_icon {
+        left: 14rem;
+        top: 30rem
+    }
+    
+    .about_paint_icon {
+        left: 12rem;
+        top: 40rem
     }
 }
 
@@ -77,12 +178,33 @@
     .about_menu {
         width: 100%;
         margin: 0;
+        margin-top: 3rem;
     }
 
     .about_postits {
         width: 100%;
         margin: 0;
         margin-top: 3rem;
+    }
+
+    .about_star_icon {
+        left: 2rem;
+        top: 39rem
+    }
+    
+    .about_barchart_icon {
+        left: -12rem;
+        top: 62rem
+    }
+    
+    .about_kitty_icon {
+        left: 2rem;
+        top: 71rem
+    }
+    
+    .about_paint_icon {
+        left: -8rem;
+        top: 89rem
     }
 }
 

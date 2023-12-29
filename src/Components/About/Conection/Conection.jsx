@@ -4,11 +4,7 @@ import books from '../../../assets/Data/books';
 import playList from '../../../assets/Data/songs';
 import { BooksIcons, 
   PdfIcon, 
-  YoutubeIcon, 
-  Barchart, 
-  Kitty, 
-  Paint, 
-  Star } from '../../../assets/Icons';
+  YoutubeIcon } from '../../../assets/Icons';
 import Styles from './Conection.module.css';
 
 export const Conection = () => {

@@ -64,4 +64,9 @@
     .conection_tag_book {
         margin-left: -1rem;
     }
+
+    .conection_icon {
+        width: 70px;
+        height: 70px;
+    }
 }
