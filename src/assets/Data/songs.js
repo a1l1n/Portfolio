@@ -1,3 +1,3 @@
-const playList = []
+const playList = ['https://www.youtube.com/watch?v=4JkIs37a2JE&ab_channel=JamiroquaiVEVO', 'https://www.youtube.com/watch?v=D8K90hX4PrE&ab_channel=DaftPunk', 'https://www.youtube.com/watch?v=N9XKLqGqwLA&ab_channel=Grimes', 'https://www.youtube.com/watch?v=WD07ZsBGgIs&ab_channel=ANXRMX', 'https://www.youtube.com/watch?v=qhPLK1Tn1GQ&ab_channel=TeichikuMusicChannel', 'https://www.youtube.com/watch?v=h9AHQV3pPn8&ab_channel=CharlyGarciaVEVO', 'https://www.youtube.com/watch?v=F4m0GkO3G50&ab_channel=MarilinaBertoldi']
 
 export default playList

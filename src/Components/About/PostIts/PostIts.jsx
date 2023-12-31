@@ -36,8 +36,6 @@ export const PostIts = () => {
           </div>
         ))
       }
-{/*       <div className={`${Styles.post_icon}`}><Kitty /></div>
-      <div className={`${Styles.post_icon}`}><Paint /></div> */}
     </div>
   )
 }

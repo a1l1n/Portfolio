@@ -24,3 +24,14 @@ export { Star } from './AboutMe/Star'
 export { Barchart } from './AboutMe/Barchart'
 export { Kitty } from './AboutMe/Kitty'
 export { Paint } from './AboutMe/Paint'
+
+// Skills
+
+export { SkillsIcon } from './Skills/SkillsIcon'
+export { SlackIcon } from './Skills/SlackIcon'
+export { ReactIcon } from './Skills/ReactIcon'
+export { NestIcon } from './Skills/NestIcon'
+export { FigmaIcon } from './Skills/FigmaIcon'
+export { NextIcon } from './Skills/NextIcon'
+export { PostgresIcon } from './Skills/PostgresIcon'
+
