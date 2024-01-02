@@ -73,4 +73,11 @@
 .tech_icon {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+} 
+
+/* RESPONSIVE --------------------------------- */
+@media screen and (max-width: 900px) {
+    .tech_container {
+        margin-left: 0;
+    }
 }

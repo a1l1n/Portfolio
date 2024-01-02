@@ -64,7 +64,8 @@
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: auto;
-    margin-top: 3rem;
+    bottom: 4rem;
+/*     margin-top: 3rem; */
     font-family: 'Courier Prime', monospace;
     background-color: #E9EBFF;
 }
@@ -96,5 +97,101 @@
 .skills_techs {
     width: 70%;
     margin: auto;
-/*     background-color: pink; */
+}
+
+.skills_icon_div {
+    display: flex;
+}
+
+.skills_icon {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(0deg);
+    border-radius: 50%;
+}
+
+.skills_slack {
+    left: 25rem;
+    top: 15rem
+}
+
+.skills_react {
+    left: 28rem;
+}
+
+.skills_next {
+    left: 12rem;
+    top: -20rem
+}
+
+.skills_nest {
+    left: 60rem;
+    top: 5rem
+}
+
+.skills_post {
+    left: 48rem;
+    top: -5rem
+}
+
+.skills_figma {
+    left: 40rem;
+    top: 19rem
+}
+
+/* RESPONSIVE ------------------------------------------------------------ */
+@media screen and (max-width: 1285px) {
+    .skills_next {
+        left: 12rem;
+    }
+
+    .skills_react {
+        top: -1rem
+    }
+
+    .skills_post {
+        left: 40rem;
+        top: -3rem
+    } 
+
+    .skills_nest {
+        left: 30rem;
+        top: 17rem
+    }
+
+    .skills_figma {
+        left: 35rem;
+        top: 20rem
+    }
+
+    .skills_slack {
+        left: 23rem;
+        top: 40rem
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skills_section {
+        flex-direction: column;
+    }
+
+    .skills_menu {
+        width: 100%;
+    }
+
+    .skills_card {
+        top: 4rem
+    }
+
+    .skills_courses_card {
+        bottom: 2rem
+    }
 }
