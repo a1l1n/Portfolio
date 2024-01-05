@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+.form_content {
+    height: 35rem;
+    width: 60%;
+    margin: auto;
+    background-color:#fffef2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form_title {
+    height: 10rem;
+    padding-top: 3rem;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+} 
+
+.form_title h3 {
+    font-family: 'Courier Prime', monospace;
+}
+
+.contact_form_div {
+    margin: auto;
+    margin-top: 1rem;
+    width: 80%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.527);
+}
+
+.contact_form_tag {
+    padding-right: 2rem;
+    width: 100%;
+    
+}
+
+.contact_form_area {
+    width: 100%;
+    margin-top: 2rem;
+    background-color:#fffef2;
+    color:rgba(0, 0, 0, 0.726);
+    border: none;
+}
+
+.contact_form_input {
+    width: 70%;
+    background-color:#fffef2;
+    border: none;
+}
+
+.contact_form_input:focus {
+    outline: none;
+}
+
+.contact_form_area textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.contact_form_area:focus {
+    outline: none;
+}
+
+.contact_button_div {
+    display: flex;
+    justify-content: space-around;
+/*     padding-right: 3rem; */
+}
+
+.contact_send_button {
+    border: none;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    width: 10rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    background-color: var(--text-color);
+}
+
+.contact_send_button:hover {
+    background-color: rgba(0, 0, 0, 0.932);
+}
+
+.contact_button_icon_div {
+    position: relative;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact_button_icon {
+    font-size: 3rem;
+}
+
+
+
+

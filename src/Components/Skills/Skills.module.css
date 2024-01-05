@@ -181,6 +181,7 @@
 @media screen and (max-width: 900px) {
     .skills_section {
         flex-direction: column;
+        width: 100%;
     }
 
     .skills_menu {
@@ -188,10 +189,66 @@
     }
 
     .skills_card {
-        top: 4rem
+        top: 4rem;
     }
 
     .skills_courses_card {
         bottom: 2rem
+    }
+
+    .skills_react {
+        left: -10rem;
+        top: 28rem
+    }
+
+    .skills_next {
+        left: 5rem;
+        top: 48rem
+    }
+
+    .skills_figma {
+        left: -2rem;
+        top: 90rem
+    }
+
+    .skills_post {
+        left: 5rem;
+        top: 65rem
+    } 
+
+    .skills_nest {
+        left: -5rem;
+        top: 47rem
+    }
+
+    .skills_slack {
+        left: -8rem;
+        top: 80rem
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .skills_card {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .skills_slack {
+        left: -5rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .skills_react {
+        left: -8rem;
+    }
+
+    .skills_nest {
+        left: -3rem;
+    }
+
+    .skills_slack {
+        left: -3rem;
     }
 }

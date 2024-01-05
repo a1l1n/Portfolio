@@ -35,3 +35,8 @@ export { FigmaIcon } from './Skills/FigmaIcon'
 export { NextIcon } from './Skills/NextIcon'
 export { PostgresIcon } from './Skills/PostgresIcon'
 
+// Contact 
+
+export { MailBoxIcon } from './Contact/MailBox'
+export { EmailIcon } from './Contact/EmailIcon'
+export { LinkedinIcon } from './Contact/LinkedinIcon'

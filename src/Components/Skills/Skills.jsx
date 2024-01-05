@@ -21,22 +21,19 @@ export const Skills = () => {
             <SkillsIcon />
           </div>
         </div>
+
         <div className={Styles.skills_icon_div}>
           <div className={`${Styles.skills_icon} ${Styles.skills_slack}`}><SlackIcon /></div>
           <div className={`${Styles.skills_icon} ${Styles.skills_react}`}><ReactIcon /></div>
-          <div className={`${Styles.skills_icon} ${Styles.skills_next}`}><NextIcon /></div>
-
-          
-          
+          <div className={`${Styles.skills_icon} ${Styles.skills_next}`}><NextIcon /></div> 
         </div>
+
         <div className={Styles.skills_icon_div}>
-        <div className={`${Styles.skills_icon} ${Styles.skills_nest}`}><NestIcon /></div>
-        <div className={`${Styles.skills_icon} ${Styles.skills_post}`}><PostgresIcon /></div>
+          <div className={`${Styles.skills_icon} ${Styles.skills_nest}`}><NestIcon /></div>
+          <div className={`${Styles.skills_icon} ${Styles.skills_post}`}><PostgresIcon /></div>
         <div className={`${Styles.skills_icon} ${Styles.skills_figma}`}><FigmaIcon /></div>
-        
-        
-        
-      </div>
+        </div>
+
         <div className={Styles.skills_courses_card}>
           <div className={Styles.skills_courses_title}>
             <h1>Próximos cursos</h1>

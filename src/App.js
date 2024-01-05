@@ -17,8 +17,8 @@ function App() {
       <About />
       <Skills />
       <Contact />
+      <Footer />
 {/*       <main className="main" >
-        <Footer />
       </main> */}
     </div>
   );
