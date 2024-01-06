@@ -1,13 +1,10 @@
 import React from 'react';
-
-import { AiOutlineArrowRight, AiOutlineLinkedin, AiOutlineSend } from "react-icons/ai";
-
-import Styles from "./Contact.module.css";
-import { MailBoxIcon, EmailIcon, LinkedinIcon } from '../../assets/Icons';
 import { Form } from './Form/Form';
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { MailBoxIcon, EmailIcon, LinkedinIcon } from '../../assets/Icons';
+import Styles from "./Contact.module.css";
 
 export const Contact = () => {
-  
     
   return (
     <section className={Styles.contact_section} id="contact">

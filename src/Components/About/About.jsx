@@ -11,7 +11,7 @@ import Styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section className={Styles.about_section} id="Sobre mí">
+    <section className={Styles.about_section} id="AboutMe">
         <div className={Styles.about_menu}>
             <div className={Styles.about_card}>
             <div className={`${Styles.about_icon} ${Styles.about_star_icon}`}>
@@ -21,7 +21,7 @@ export const About = () => {
                 <Barchart />
             </div>
                 <div className={Styles.about_inner_card}>
-                    <h1>Sobre Mí</h1>
+                    <h1>About Me</h1>
                     <Duck />
                 </div>
             </div>

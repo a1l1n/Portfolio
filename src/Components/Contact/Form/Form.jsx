@@ -72,10 +72,8 @@ export const Form = () => {
       <div className={Styles.contact_button_div}>
         <button className={Styles.contact_send_button}>
             Send 
-        </button>
-        <div className={Styles.contact_button_icon_div}>
             <AiOutlineSend className={Styles.contact_button_icon}/>
-        </div>
+        </button>
       </div>
     </form>
 </div>

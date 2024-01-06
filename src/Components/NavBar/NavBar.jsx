@@ -13,7 +13,7 @@ import Styles from "./NavBar.module.css";
 export const NavBar = () => {
     const [ Toggle, showMenu ] = useState(false); 
     const [selectedItem, setSelectedItem] = useState(0);
-    const items = ['Principal', 'Proyectos', 'Sobre mí', 'Habilidades', 'Contacto'];
+    const items = ['Home', 'Projects', 'AboutMe', 'Skills', 'Contact'];
 
     const activate = (index) => {
         setSelectedItem(index);
@@ -50,10 +50,6 @@ export const NavBar = () => {
                   </a>
                 </li>
              ))}   
-                <li className={Styles.nav_menu_mode}>
-                  <VscColorMode className={Styles.nav_menu_icon} />
-                  Modo
-                </li>
             </ul>
        </div>            
             <div id='bottom-navbar-indicator' className={ `${Styles.indicator} ${Styles[`indicator-${selectedItem}`]}` }></div>

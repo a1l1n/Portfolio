@@ -23,6 +23,7 @@
 .contact_form {
     width: 70%;
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 .contact_card {
@@ -123,10 +124,51 @@
 .contact_email {
     left: 16rem;
     bottom: 1rem;
-    /* top: 6rem */
 }
 
 .contact_linkedinIcon {
     left: 13rem;
     top: 3rem
+}
+
+/* MEDIA - QUERY --------------------------------------------- */
+@media screen and (max-width: 1285px) {
+    .contact_section {
+        width: 100%;
+    }
+
+    .contact_menu {
+        padding-left: 6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact_section {
+        flex-direction: column;
+    }
+
+    .contact_menu {
+        width: 90%;
+        padding-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+/*         justify-content: center; */
+    }
+
+    .contact_minicard {
+        width: 16rem;
+        height: 10rem;
+    }
+
+    .contact_inner_minicard {
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .contact_inner_minicard span, 
+    .contact_inner_minicard a,
+    .contact_inner_minicard h3 {
+    margin-left: 1rem;
+}
 }

@@ -37,14 +37,14 @@ export const Data = () => {
 
           <div className={Styles.data_description}>
             <p>
-            Hola, te saluda una entusiasta del Desarrollo Web. Pasá y mirá mis proyectos y si mi perfil te interesa te invito a
+            Hello, greetings from a Web Development enthusiast. Come in and take a look at my projects. If my profile interests you, I invite you to
             </p>
           </div>
         </div>
 
         <div className={Styles.data_button}>
           <a href="#contact" className={Styles.data_button_a}>
-              Escribirme
+              Contact Me
               <AiOutlineSend className={Styles.data_button_icon}/>
             </a>
         </div>
