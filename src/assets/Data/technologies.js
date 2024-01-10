@@ -8,7 +8,7 @@ const technologies = [
         items: ['NodeJS', 'Sequelize', 'PostgreSQL', 'Express', 'NestJs']
     },
     {
-        title: 'Herramientas de Desarrollo',
+        title: 'Dev Tools',
         items: ['Git / GitHub', 'Trello', 'Figma', 'Slack', 'Postman']
     }
 ]

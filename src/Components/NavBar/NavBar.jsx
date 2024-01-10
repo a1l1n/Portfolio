@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BsCircleFill } from "react-icons/bs";
-import { VscColorMode } from "react-icons/vsc"
+import { BsCircleFill, BsBriefcase } from "react-icons/bs";
 import { AiOutlineHome, 
   AiOutlineUser, 
   AiOutlineFileDone, 
@@ -13,7 +12,7 @@ import Styles from "./NavBar.module.css";
 export const NavBar = () => {
     const [ Toggle, showMenu ] = useState(false); 
     const [selectedItem, setSelectedItem] = useState(0);
-    const items = ['Home', 'Projects', 'AboutMe', 'Skills', 'Contact'];
+    const items = ['Home', 'Professional Experience' ,'Academic Projects', 'About Me', 'Skills', 'Contact'];
 
     const activate = (index) => {
         setSelectedItem(index);
@@ -42,10 +41,11 @@ export const NavBar = () => {
                 >
                   <a href={`#${item}`} className={Styles.nav_menu_link}>
                     {index === 0 && <AiOutlineHome className={Styles.nav_menu_icon} />}
-                    {index === 1 && <AiOutlinePicture className={Styles.nav_menu_icon} />}
-                    {index === 2 && <AiOutlineUser className={Styles.nav_menu_icon} />}
-                    {index === 3 && <AiOutlineFileDone className={Styles.nav_menu_icon}/>}
-                    {index === 4 && <AiOutlineSend className={Styles.nav_menu_icon} />}
+                    {index === 1 && <BsBriefcase className={Styles.nav_menu_icon} />}
+                    {index === 2 && <AiOutlinePicture className={Styles.nav_menu_icon} />}
+                    {index === 3 && <AiOutlineUser className={Styles.nav_menu_icon} />}
+                    {index === 4 && <AiOutlineFileDone className={Styles.nav_menu_icon}/>}
+                    {index === 5 && <AiOutlineSend className={Styles.nav_menu_icon} />}
                     {item}
                   </a>
                 </li>

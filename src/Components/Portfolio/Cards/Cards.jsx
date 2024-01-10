@@ -12,10 +12,10 @@ export const Cards = ({ works, selectedFilter }) => {
   return (
     <div className={Styles.cards_container}>
       {
-        selectedFilter === 'Back-End' ? 
+        selectedFilter === 'Back-end' ? 
         <div className={Styles.not_found_card}>
           <div className={Styles.not_found_title}>
-            <h1>Proyectos en incubación</h1>
+            <h1>Work in Progress</h1>
           </div>
             <Creative />
         </div>
@@ -28,14 +28,14 @@ export const Cards = ({ works, selectedFilter }) => {
               <img src={p.image} alt={p.name} className={Styles.card_img}/>
 
               <div className={
-                `${Styles.card_type} ${p.type === 'Full-Stack' ? Styles.card_type_fullstack : p.type === 'Front-End' ? Styles.card_type_front : Styles.type_back}`
+                `${Styles.card_type} ${p.type === 'Full-stack' ? Styles.card_type_fullstack : p.type === 'Front-end' ? Styles.card_type_front : Styles.type_back}`
               }>
                 <h3>{p.type}</h3>
               </div>
             </div>
 
             <div className={Styles.card_content_back}>
-              <div className={`${Styles.card_back_title} ${p.type === 'Full-Stack' ? Styles.card_type_fullstack : p.type === 'Front-End' ? Styles.card_type_front : Styles.type_back}`}>Tecnologías</div>
+              <div className={`${Styles.card_back_title} ${p.type === 'Full-stack' ? Styles.card_type_fullstack : p.type === 'Front-end' ? Styles.card_type_front : Styles.type_back}`}>Tech Stack</div>
 
               <div className={Styles.card_tech}>
                 {
@@ -49,7 +49,7 @@ export const Cards = ({ works, selectedFilter }) => {
               </div>
 
               <div className={Styles.card_links}>
-                <a href={p.code} target="_blank"> <AiOutlineGithub className={Styles.card_links_icons} />Código</a>
+                <a href={p.code} target="_blank"> <AiOutlineGithub className={Styles.card_links_icons} />Code</a>
                 {
                   p.demo === 'Coming soon' ?
                   <p>Pronto</p>

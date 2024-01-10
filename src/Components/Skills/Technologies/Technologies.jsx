@@ -11,8 +11,7 @@ export const Technologies = () => {
           <div key={index} className={`${Styles.tech_content}
             ${t.title === 'Back-End' ? Styles.tech_back : t.title === 'Front-End' ? Styles.tech_front : Styles.tech_tools}
             ${index % 2 === 0 ? Styles.tech_pair : null}`}>
-            <div className={`${Styles.tech_title} 
-            ${t.title === 'Herramientas de Desarrollo' ? Styles.tech_tools_title : null}`}>
+            <div className={`${Styles.tech_title}`}>
               <h1>{t.title}</h1>
             </div>
 

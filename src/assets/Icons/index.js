@@ -8,6 +8,9 @@ export { Cloud } from './Home/Cloud'
 export { Screen } from './Home/Screen'
 export { Code } from './Home/Code'
 
+// Experience 
+export { WorkTableIcon } from './Experience/WorkTableIcon'
+
 // Portfolio
 export { Creative } from './Portfolio/Creative'
 export { ApiIcon } from './Portfolio/ApiIcon'

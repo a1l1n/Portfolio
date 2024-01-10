@@ -6,33 +6,33 @@ export const Filters = ({ selectedFilter, onFilterChange }) => {
   return (
     <div className={Styles.filter_container}>
       <button
-        onClick={() => onFilterChange('Full-Stack')} 
+        onClick={() => onFilterChange('Full-stack')} 
         className={`${Styles.filter_button} 
         ${Styles.filter_button_full}
         ${Styles.filter_button_pair}
-        ${selectedFilter === 'Full-Stack' ? Styles.filter_button_full_active : null}`}>
+        ${selectedFilter === 'Full-stack' ? Styles.filter_button_full_active : null}`}>
         Full-Stack
       </button>
       <button
-        onClick={() => onFilterChange('Front-End')} 
+        onClick={() => onFilterChange('Front-end')} 
         className={`${Styles.filter_button} 
         ${Styles.filter_button_front}
-        ${selectedFilter === 'Front-End' ? Styles.filter_button_front_active : null}`}>
+        ${selectedFilter === 'Front-end' ? Styles.filter_button_front_active : null}`}>
         Front-End
       </button>
       <button
-        onClick={() => onFilterChange('Back-End')} 
+        onClick={() => onFilterChange('Back-end')} 
         className={`${Styles.filter_button} 
         ${Styles.filter_button_back}
         ${Styles.filter_button_pair}
-        ${selectedFilter === 'Back-End' ? Styles.filter_button_back_active : null}`}>
+        ${selectedFilter === 'Back-end' ? Styles.filter_button_back_active : null}`}>
         Back-End
       </button>
       <button
         onClick={() => onFilterChange('Todos')} 
         className={`${Styles.filter_button} 
         ${selectedFilter === 'Todos' ? Styles.filter_button_all_active : Styles.filter_button_all}`}>
-        Todos
+        All
       </button>
     </div>
   )

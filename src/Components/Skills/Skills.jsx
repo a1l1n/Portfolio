@@ -17,7 +17,7 @@ export const Skills = () => {
       <div className={Styles.skills_menu}>
         <div className={Styles.skills_card}>
           <div className={Styles.skills_inner_card}>
-            <h1>Habilidades Técnicas</h1>
+            <h1>Skills</h1>
             <SkillsIcon />
           </div>
         </div>
@@ -36,7 +36,7 @@ export const Skills = () => {
 
         <div className={Styles.skills_courses_card}>
           <div className={Styles.skills_courses_title}>
-            <h1>Próximos cursos</h1>
+            <h1>Upcoming courses</h1>
           </div>
           <div className={Styles.courses_items}>  
             <Check /><a href='https://www.udemy.com/course/python-total/' 

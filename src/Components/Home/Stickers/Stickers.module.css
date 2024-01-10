@@ -21,7 +21,7 @@
     border: 0.2px solid rgb(209, 209, 209);
 }
 
-/* RESPONSIVE ------------------------------------------ */
+/* MEDIA - QUERY ------------------------------------------ */
 @media screen and (max-width: 950px){   
    .stickers_container {
        display: none;

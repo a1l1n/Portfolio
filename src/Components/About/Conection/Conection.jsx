@@ -31,7 +31,7 @@ export const Conection = () => {
         target='_blank'
         onClick={handleNextSong}
         >
-        Favorito Random
+        Random Fav
         </a>
       </div>
       <div className={`${Styles.conection_tag} ${Styles.conection_tag_book}`}>
@@ -39,7 +39,7 @@ export const Conection = () => {
         <a href={books[favBooks]}
         target='_blank'
         onClick={handleNextRecommendation}>
-          Recomendación
+          Recommendation
         </a>
       </div>
     </div>

@@ -55,18 +55,19 @@
     justify-content: center;
     text-decoration: none;
     color: inherit;
+    font-size: 14px;
+    text-align: center;
     transition: 0.3s;
 }
 
 .show_menu {
-    margin-top: 0.8em;
+    margin-top: 0.5em;
 }
 
 .nav_menu_icon {
     font-size: 1.8rem;
     height: 50%;
     transition: 0.3s;
-    margin-bottom: .4rem;
     color: var(--text-color);
 }
 
@@ -102,6 +103,10 @@
 
 .indicator-4 {
     left: calc(4 * (75px + 45px));
+}
+
+.indicator-5 {
+    left: calc(4 * (75px + 72px));
 }
 
 /* Active ---------------------------------------------------*/
@@ -211,7 +216,6 @@
     }
 
     .nav_close:hover, .nav_toggle:hover {
-    /*     color:rgb(175, 150, 6); */
     color: var(--secondary-color);
     }
 

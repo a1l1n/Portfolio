@@ -10,9 +10,9 @@ export const PostIts = () => {
       {
         about.map((post, index) => (
           <div key={index} className={`${Styles.post_content} 
-            ${post.title === 'Perfil Profesional' ? Styles.post_profile :
-            post.title === 'Números' ? Styles.post_numbers :
-            post.title === 'Proyección' ? Styles.post_proyection 
+            ${post.title === 'Professional Profile' ? Styles.post_profile :
+            post.title === 'Numbers' ? Styles.post_numbers :
+            post.title === 'Projection' ? Styles.post_proyection 
             : Styles.post_data}
             ${index % 2 === 0 ? null : Styles.post_pair}`}>
             <div className={Styles.post_title}>

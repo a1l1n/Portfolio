@@ -11,7 +11,7 @@ import Styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section className={Styles.about_section} id="AboutMe">
+    <section className={Styles.about_section} id="About Me">
         <div className={Styles.about_menu}>
             <div className={Styles.about_card}>
             <div className={`${Styles.about_icon} ${Styles.about_star_icon}`}>

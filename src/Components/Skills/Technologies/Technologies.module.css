@@ -49,9 +49,6 @@
     font-size: 14px;
 }
 
-.tech_tools_title {
-    margin-top: 2rem;
-}
 .tech_items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

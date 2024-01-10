@@ -64,7 +64,7 @@ export const Form = () => {
         name="message"
         cols="30"
         rows="10"
-        placeholder="Compartime tu proyecto o ideas..."  
+        placeholder="I would like my project..."  
         className={Styles.contact_form_area}>
         </textarea>
       </div>

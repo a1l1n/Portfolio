@@ -10,14 +10,14 @@ import works from "../../assets/Data/projects";
 import Styles from "./Portfolio.module.css";
 
 export const Portfolio = () => {
-  const [filtered, setFilter] = useState('Todos')
+  const [filtered, setFilter] = useState('All')
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter)
   }
 
   return (
-    <section className={Styles.portfolio_section} id="Proyectos">
+    <section className={Styles.portfolio_section} id="Academic Projects">
 
         <div className={Styles.portfolio_menu}>
           <div className={Styles.portfolio_card}>
@@ -31,7 +31,9 @@ export const Portfolio = () => {
             <ApiIcon />
           </div>
             <div className={Styles.portfolio_inner_card}>
-              <h1>Proyectos</h1>
+              <div className={Styles.portfolio_title}>
+                <h1>Academic Projects</h1>
+              </div>
               <Tools />
             </div>
           </div>

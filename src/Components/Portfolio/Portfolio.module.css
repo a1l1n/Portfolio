@@ -50,6 +50,11 @@
     font-family: 'Jost', sans-serif;
 }
 
+.portfolio_title {
+    width: 80%;
+    text-align: center;
+}
+
 .portfolio_inner_card h1 {
     margin-bottom: 0.5em;
 }
