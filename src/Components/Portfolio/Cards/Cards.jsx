@@ -5,7 +5,7 @@ import Styles from './Cards.module.css'
 
 export const Cards = ({ works, selectedFilter }) => {
   const filteredWorks =
-    selectedFilter === 'Todos'
+    selectedFilter === 'All'
       ? works
       : works.filter((p) => p.type === selectedFilter);
 

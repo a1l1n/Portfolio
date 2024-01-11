@@ -55,6 +55,13 @@
     justify-content: center;
     border-radius: 10px;
     font-family: 'Jost', sans-serif;
+} 
+
+.contact_minicard_continer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    transition: 0.3s;
 }
 
 .contact_minicard {
@@ -121,7 +128,7 @@
     border-radius: 50%;
 }
 
-.contact_email {
+.contact_emailIcon {
     left: 16rem;
     bottom: 1rem;
     transform: rotate(5deg); 
@@ -143,7 +150,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .contact_section {
         flex-direction: column;
     }
@@ -154,7 +161,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
-/*         justify-content: center; */
     }
 
     .contact_minicard {
@@ -171,5 +177,26 @@
     .contact_inner_minicard a,
     .contact_inner_minicard h3 {
     margin-left: 1rem;
+    }
+
+    .contact_form {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    .contact_emailIcon {
+        left: 12rem;
+    }
 }
+
+@media screen and (max-width: 960px) {
+    .contact_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_minicard_continer {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
 }

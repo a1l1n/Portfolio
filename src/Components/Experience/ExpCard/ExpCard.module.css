@@ -25,33 +25,69 @@
     z-index: 2;
     text-align: center;
     margin-top: 1.5rem;
+    color: var(--text-color)
 }
 
 .exp_title_light {
     position: relative;
     z-index: -1;
-    left: 4rem;
+    left: 5rem;
     bottom: 1.8rem;
-    width: 10rem;
+    width: 8rem;
     height: 2rem;
     transform: rotate(-5.558deg);
     background-color: yellow;
 }
 
 .exp_card {
-    width: 400px;
+    width: 25rem;
     height: 15rem;
     border-radius: 5px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.exp_card_front {
-    height: 100%;
+.exp_card:hover {
+    transform: rotateY(180deg);
+}
+
+.exp_card_front, .exp_card_back {
+    position: absolute;
+    backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+.exp_card_front {
+    height: 100%;
+}
+
+.exp_card_back {
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+}
+
+.exp_card_back a,
+.exp_card_back h4,
+.exp_card_back h5 {
+    color: rgba(255, 255, 255, 0.76);
+    transition: 0.4s;
+}
+
+.exp_card_back h4,
+.exp_card_back h5 {
+    font-weight: 400;
+}
+
+.exp_card_back a:hover {
+    color: rgba(29, 220, 226, 0.856);
+    transition: 0.4s;
 }
 
 .exp_holocruxe {
@@ -66,4 +102,9 @@
 .exp_holocruxe_phrase p {
     color: rgba(255, 255, 255, 0.76);
     font-weight: 500;
+}
+
+.exp_card_back_data {
+    width: 70%;
+    margin-top: 1rem;
 }

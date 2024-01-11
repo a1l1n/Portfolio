@@ -3,11 +3,11 @@ import Holocruxe from '../Holocruxe.png'
 let experience = [
     {
       id: 1,
+      image: Holocruxe,
       entreprise: 'Holocruxe',
       phrase: 'Your life Your story, Your legacy...',
       job: 'Front-end Developer',
-      webpage: 'https://www.holocruxe.com/',
-      image: Holocruxe,
+      webpage: 'https://web.holocruxe.com/login/',
       tech: [
           {
               title: 'Front-end',

@@ -16,31 +16,34 @@ export const Contact = () => {
           </div>
         </div>
 
-        <div className={`${Styles.contact_minicard} ${Styles.contact_mail}`}>
-          <div className={Styles.contact_inner_minicard}>
-          <h3>Email</h3>
-          <span>ailin.tobares@gmail.com</span>
-          <a href="mailto:ailin.tobares@gmail.com" className={Styles.contact_button}>
-            Contact me <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
-          </a>
+        <div className={Styles.contact_minicard_continer}>
+          <div className={`${Styles.contact_minicard} ${Styles.contact_mail}`}>
+            <div className={Styles.contact_inner_minicard}>
+            <h3>Email</h3>
+            <span>ailin.tobares@gmail.com</span>
+            <a href="mailto:ailin.tobares@gmail.com" className={Styles.contact_button}>
+              Contact me <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
+            </a>
+            </div>
+            <div className={`${Styles.contact_icon} ${Styles.contact_emailIcon}`}>
+              <EmailIcon />
+            </div>
           </div>
-          <div className={`${Styles.contact_icon} ${Styles.contact_email}`}>
-            <EmailIcon />
+
+          <div className={`${Styles.contact_minicard} ${Styles.contact_linkedin}`}>
+            <div className={Styles.contact_inner_minicard}>
+              <h3>LinkedIn</h3>
+              <span>Send me a DM </span>
+              <a href="https://www.linkedin.com/feed/" target="_blank" className={Styles.contact_button}>
+                Message <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
+              </a>
+            </div>
+            <div className={`${Styles.contact_icon} ${Styles.contact_linkedinIcon}`}>
+              <LinkedinIcon />
+            </div>
           </div>
         </div>
 
-        <div className={`${Styles.contact_minicard} ${Styles.contact_linkedin}`}>
-          <div className={Styles.contact_inner_minicard}>
-            <h3>LinkedIn</h3>
-            <span>Send me a DM </span>
-            <a href="https://www.linkedin.com/feed/" target="_blank" className={Styles.contact_button}>
-              Message <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
-            </a>
-          </div>
-          <div className={`${Styles.contact_icon} ${Styles.contact_linkedinIcon}`}>
-            <LinkedinIcon />
-          </div>
-        </div>
       </div>
         
       <div className={Styles.contact_form}>

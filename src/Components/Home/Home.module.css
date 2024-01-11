@@ -28,4 +28,10 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .home_section {
+        margin-top: 1.5rem;
+    }
+}
+
 

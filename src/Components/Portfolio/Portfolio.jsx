@@ -11,6 +11,7 @@ import Styles from "./Portfolio.module.css";
 
 export const Portfolio = () => {
   const [filtered, setFilter] = useState('All')
+  console.log("Esto es filtered: ", filtered)
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter)

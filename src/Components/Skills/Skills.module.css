@@ -65,7 +65,6 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: auto;
     bottom: 4rem;
-/*     margin-top: 3rem; */
     font-family: 'Courier Prime', monospace;
     background-color: #E9EBFF;
 }
@@ -189,7 +188,7 @@
     }
 
     .skills_card {
-        top: 4rem;
+        top: 2rem;
     }
 
     .skills_courses_card {
@@ -250,5 +249,9 @@
 
     .skills_slack {
         left: -3rem;
+    }
+
+    .skills_next {
+        left: 3rem;
     }
 }
