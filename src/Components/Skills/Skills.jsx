@@ -13,7 +13,7 @@ import { Technologies } from './Technologies/Technologies';
 
 export const Skills = () => {
   return (
-    <section className={Styles.skills_section} id="Habilidades">
+    <section className={Styles.skills_section} id="Skills">
       <div className={Styles.skills_menu}>
         <div className={Styles.skills_card}>
           <div className={Styles.skills_inner_card}>

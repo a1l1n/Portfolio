@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: pink;
 }
 
 .exp_card {
@@ -54,10 +53,10 @@
 .exp_title {
     width: 80%;
     text-align: center;
+    color: var(--text-color)
 }
 
 .exp_experience {
     width: 70%;
     height: 100%;
-    background-color: aqua;
 }

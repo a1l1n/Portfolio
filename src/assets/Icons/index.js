@@ -10,6 +10,7 @@ export { Code } from './Home/Code'
 
 // Experience 
 export { WorkTableIcon } from './Experience/WorkTableIcon'
+export { Deal } from './Experience/Deal'
 
 // Portfolio
 export { Creative } from './Portfolio/Creative'

@@ -52,7 +52,7 @@ export const Cards = ({ works, selectedFilter }) => {
                 <a href={p.code} target="_blank"> <AiOutlineGithub className={Styles.card_links_icons} />Code</a>
                 {
                   p.demo === 'Coming soon' ?
-                  <p>Pronto</p>
+                  <p>Soon</p>
                   :
                   <a href={p.demo} target="_blank">Demo <AiOutlineArrowRight className={Styles.card_links_icons}/></a>
                 }

@@ -7,7 +7,7 @@ import Styles from "./Contact.module.css";
 export const Contact = () => {
     
   return (
-    <section className={Styles.contact_section} id="contact">
+    <section className={Styles.contact_section} id="Contact">
       <div className={Styles.contact_menu}>
         <div className={Styles.contact_card}>
           <div className={Styles.contact_inner_card}>

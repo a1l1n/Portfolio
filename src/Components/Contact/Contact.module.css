@@ -63,7 +63,7 @@
     flex-direction: column;
     width: 20rem;
     height: 10rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -124,6 +124,7 @@
 .contact_email {
     left: 16rem;
     bottom: 1rem;
+    transform: rotate(5deg); 
 }
 
 .contact_linkedinIcon {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { WorkTableIcon } from '../../assets/Icons'
+import { ExpCard } from './ExpCard/ExpCard'
 import Styles from './Experience.module.css'
 
 export const Experience = () => {
@@ -18,7 +19,7 @@ export const Experience = () => {
       </div>
 
       <div className={Styles.exp_experience}>
-          hola mundo
+          <ExpCard />
       </div>
     </section>
   )

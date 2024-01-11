@@ -8,18 +8,6 @@ export const Footer = () => {
           <div className={Styles.footer_container}>
             <h1 className={Styles.footer_title}>Ailin Tobares</h1>
 
-            <ul className={Styles.footer_list}>
-                <li>
-                    <a href="#about" className={Styles.footer_link}>About</a>
-                </li>
-                <li>
-                    <a href="#skills" className={Styles.footer_link}>Skills</a>
-                </li>
-                <li>
-                    <a href="#portfolio" className={Styles.footer_link}>Proyectos</a>
-                </li>
-            </ul>
-
             <div className={Styles.footer_social}>
             <a href="https://www.facebook.com/roque.tobares.9/" className={Styles.footer_social_icon} target="_blank"><AiOutlineFacebook /></a>
 
