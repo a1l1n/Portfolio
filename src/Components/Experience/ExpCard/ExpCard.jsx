@@ -31,7 +31,7 @@ export const ExpCard = () => {
                 
                 <div className={Styles.exp_card_back}>
                   <a href={e.webpage} target='_blank'>
-                    <h2>Holocruxe</h2>
+                    <h2>{e.entreprise}</h2>
                   </a>
                   <h5>Web</h5>
                   <h4>As {e.job}</h4>

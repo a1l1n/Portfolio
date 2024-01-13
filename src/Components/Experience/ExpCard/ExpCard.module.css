@@ -15,6 +15,8 @@
     align-items: center;
     width: 18rem;
     height: 16rem;
+    border: 3px rgba(19, 70, 136, 0.699);
+    border-style: dashed;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -42,6 +44,7 @@
 .exp_card {
     width: 25rem;
     height: 15rem;
+    margin-top: 2rem;
     border-radius: 5px;
     cursor: pointer;
     transform-style: preserve-3d;
@@ -76,7 +79,7 @@
 .exp_card_back a,
 .exp_card_back h4,
 .exp_card_back h5 {
-    color: rgba(255, 255, 255, 0.76);
+    color: rgba(255, 255, 255, 0.829);
     transition: 0.4s;
 }
 
