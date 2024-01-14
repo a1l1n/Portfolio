@@ -29,9 +29,9 @@ export const Filters = ({ selectedFilter, onFilterChange }) => {
         Back-End
       </button>
       <button
-        onClick={() => onFilterChange('Todos')} 
+        onClick={() => onFilterChange('All')} 
         className={`${Styles.filter_button} 
-        ${selectedFilter === 'Todos' ? Styles.filter_button_all_active : Styles.filter_button_all}`}>
+        ${selectedFilter === 'All' ? Styles.filter_button_all_active : Styles.filter_button_all}`}>
         All
       </button>
     </div>

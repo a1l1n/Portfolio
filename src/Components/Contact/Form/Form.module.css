@@ -8,11 +8,21 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.form_cutie_top, .form_cutie_bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_cutie_top {
+    top: 1rem
+}
+
 .form_title {
-/*     background-color: var(--text-color); */
     height: 10rem;
-    padding-top: 3rem;
-    width: 60%;
+    padding-top: 1rem;
+    width: 70%;
     margin: auto;
     justify-content: center;
     display: flex;
@@ -20,7 +30,6 @@
 } 
 
 .form_title h3 {
-/*     color: white; */
     font-family: 'Courier Prime', monospace;
 }
 
@@ -34,7 +43,6 @@
 .contact_form_tag {
     padding-right: 0.5rem;
     width: 100%;
-    
 }
 
 .contact_form_area {
@@ -64,6 +72,14 @@
     outline: none;
 }
 
+.form_numbers {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 4rem;
+    font-size: 13px;
+    color: gray
+}
+
 .contact_button_div {
     display: flex;;
 }
@@ -74,7 +90,8 @@
     justify-content:center;
     border: none;
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     margin-left: 10rem;
     width: 10rem;
     border-radius: 6px;
