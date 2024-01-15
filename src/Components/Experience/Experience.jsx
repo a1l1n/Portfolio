@@ -1,5 +1,5 @@
 import React from 'react'
-import { WorkTableIcon } from '../../assets/Icons'
+import { CoffeeIcon, IdeaIcon, WorkTableIcon } from '../../assets/Icons'
 import { ExpCard } from './ExpCard/ExpCard'
 import Styles from './Experience.module.css'
 
@@ -8,6 +8,10 @@ export const Experience = () => {
     <section className={Styles.exp_section} id='Professional Experience'>
       <div className={Styles.exp_menu}>
 
+        <div className={`${Styles.exp_icon} ${Styles.exp_ideaIcon}`}>
+          <IdeaIcon />
+        </div>
+
         <div className={Styles.exp_card}>
           <div className={Styles.exp_inner_card}>
             <div className={Styles.exp_title}>
@@ -15,6 +19,10 @@ export const Experience = () => {
             </div>
             <WorkTableIcon />
           </div>
+        </div>
+
+        <div className={`${Styles.exp_icon} ${Styles.exp_coffeeIcon}`}>
+          <CoffeeIcon />
         </div>
       </div>
 

@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: gray
 }
 
 .form_cutie_top {
@@ -113,24 +114,27 @@
 }
 
 /* MEDIA - QUERY --------------------------------------------- */
-@media screen and (max-width: 1285px) {
-
-}
-
 @media screen and (max-width: 550px) {
     .form_content {
-        height: 38rem;
+        height: 41rem;
         width: 90%;
         margin: auto;
         background-color:#fffef2;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
-}
-
-@media screen and (max-width: 550px) {
     .contact_send_button {
         margin-left: 5rem;
         margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form_cutie_top, .form_cutie_bottom {
+        font-size: 13px;
+    }
+
+    .form_cutie_bottom {
+        margin-top: 1.5rem;
     }
 }
 

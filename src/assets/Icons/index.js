@@ -11,6 +11,8 @@ export { Code } from './Home/Code'
 // Experience 
 export { WorkTableIcon } from './Experience/WorkTableIcon'
 export { Deal } from './Experience/Deal'
+export { IdeaIcon } from './Experience/IdeaIcon'
+export { CoffeeIcon } from './Experience/CofeeIcon'
 
 // Portfolio
 export { Creative } from './Portfolio/Creative'
@@ -44,3 +46,7 @@ export { PostgresIcon } from './Skills/PostgresIcon'
 export { MailBoxIcon } from './Contact/MailBox'
 export { EmailIcon } from './Contact/EmailIcon'
 export { LinkedinIcon } from './Contact/LinkedinIcon'
+
+// Footer
+
+export { BunnyIcon } from './Footer/BunnyIcon'

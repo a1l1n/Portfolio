@@ -55,7 +55,7 @@ export const Form = () => {
 
     <div className={Styles.form_content}>
         <div className={Styles.form_cutie_top}>
-        * ´ * ❀ ʕ•́ᴥ•̀ʔっ ❀ *´* ≧◔◡◔≦ *´* ❀ ʕ•́ᴥ•̀ʔっ ❀ * ´ *
+        <p>* ´ * ❀ ʕ•́ᴥ•̀ʔっ ❀ *´* ≧◔◡◔≦ *´* ❀ ʕ•́ᴥ•̀ʔっ ❀ * ´ *</p>
         </div>
 
         <div className={Styles.form_title}>
@@ -87,7 +87,7 @@ export const Form = () => {
         cols="30"
         rows="10"
         maxlength="1050"
-        placeholder="I would like my project..."
+        placeholder="Hello! This is what I have in mind..."
         onChange={handleTextChange}  
         className={Styles.contact_form_area}>
         </textarea> 
@@ -105,7 +105,7 @@ export const Form = () => {
       </div>
 
       <div className={Styles.form_cutie_bottom}>
-      * ´ * ❀ ʕ•́ᴥ•̀ʔっ ❀ *´* ≧◔◡◔≦ *´* ❀ ʕ•́ᴥ•̀ʔっ ❀ * ´ *
+      <p>* ´ * ❀ ʕ•́ᴥ•̀ʔっ ❀ *´* ≧◔◡◔≦ *´* ❀ ʕ•́ᴥ•̀ʔっ ❀ * ´ *</p>
       </div>
     </form>
 </div>

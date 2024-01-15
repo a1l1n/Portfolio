@@ -4,9 +4,10 @@
 .home_section {
     width: 80%;
     margin: auto;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     z-index: 1;
     position: relative;
+    height: 75vh;
 
 }
 .home_container {
@@ -16,6 +17,12 @@
 }
 
 /* RESPONSIVE ------------------------------ */
+@media screen and (max-width: 1285px) {
+    .home_section {
+        height: 70vh;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .home_section {
         width: 90%;
@@ -31,6 +38,7 @@
 @media screen and (max-width: 480px) {
     .home_section {
         margin-top: 1.5rem;
+        height: 76vh;
     }
 }
 

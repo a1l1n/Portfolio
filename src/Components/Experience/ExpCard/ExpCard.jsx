@@ -18,7 +18,7 @@ export const ExpCard = () => {
         </div>
       </div>
 
-      <div>
+      <div className={Styles.exp_card_container}>
         {
             experience?.map((e) => (
               <div className={`${Styles.exp_card} ${Styles.exp_holocruxe}`}>

@@ -5,7 +5,7 @@ let experience = [
       id: 1,
       image: Holocruxe,
       entreprise: 'Holocruxe',
-      phrase: 'Your life Your story, Your legacy...',
+      phrase: 'Your life, Your story, Your legacy...',
       job: 'Front-end Developer',
       webpage: 'https://web.holocruxe.com/login/',
       tech: [
