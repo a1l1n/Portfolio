@@ -43,7 +43,7 @@ export const Data = () => {
         </div>
 
         <div className={Styles.data_button}>
-          <a href="#contact" className={Styles.data_button_a}>
+          <a href="#Contact" className={Styles.data_button_a}>
               Contact Me
               <AiOutlineSend className={Styles.data_button_icon}/>
             </a>

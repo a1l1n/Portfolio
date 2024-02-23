@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CV from '../../../assets/Data/Tobares Ailin CV - January 2024.pdf';
+import CV from '../../../assets/Data/Tobares Ailin - Frontend CV - February 2024.pdf';
 import books from '../../../assets/Data/books';
 import playList from '../../../assets/Data/songs';
 import { BooksIcons, 

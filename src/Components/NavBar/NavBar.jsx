@@ -7,12 +7,14 @@ import { AiOutlineHome,
   AiOutlineSend, 
   AiOutlineClose, 
   AiOutlineAppstore } from "react-icons/ai";
+import { CvIcon } from '../../assets/Icons';
+import CV from '../../assets/Data/Tobares Ailin - Frontend CV - February 2024.pdf'
 import Styles from "./NavBar.module.css";
 
 export const NavBar = () => {
     const [ Toggle, showMenu ] = useState(false); 
     const [selectedItem, setSelectedItem] = useState(0);
-    const items = ['Home', 'Professional Experience' ,'Academic Projects', 'About Me', 'Skills', 'Contact'];
+    const items = ['Home', 'Experience' ,'Projects', 'About Me', 'Skills', 'Contact'];
 
     const activate = (index) => {
         setSelectedItem(index);
@@ -45,11 +47,14 @@ export const NavBar = () => {
                     {index === 2 && <AiOutlinePicture className={Styles.nav_menu_icon} />}
                     {index === 3 && <AiOutlineUser className={Styles.nav_menu_icon} />}
                     {index === 4 && <AiOutlineFileDone className={Styles.nav_menu_icon}/>}
-                    {index === 5 && <AiOutlineSend className={Styles.nav_menu_icon} />}
+                    {index === 5 && <AiOutlineSend className={Styles.nav_menu_icon}/>}
                     {item}
                   </a>
                 </li>
              ))}   
+                <li className={Styles.nav_menu_item}>
+                  <a download="" href={CV} className={Styles.nav_menu_link}><CvIcon/>CV</a>
+                </li>
             </ul>
        </div>            
             <div id='bottom-navbar-indicator' className={ `${Styles.indicator} ${Styles[`indicator-${selectedItem}`]}` }></div>

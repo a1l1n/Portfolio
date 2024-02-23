@@ -1,3 +1,6 @@
+// Navbar
+export { CvIcon } from './Navbar/CvIcon'
+
 // Home
 export { Duck } from './Home/Duck'
 export { Bug } from './Home/Bug'

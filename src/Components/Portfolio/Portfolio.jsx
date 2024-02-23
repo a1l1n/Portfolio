@@ -17,7 +17,7 @@ export const Portfolio = () => {
   }
 
   return (
-    <section className={Styles.portfolio_section} id="Academic Projects">
+    <section className={Styles.portfolio_section} id="Projects">
 
         <div className={Styles.portfolio_menu}>
           <div className={Styles.portfolio_card}>
